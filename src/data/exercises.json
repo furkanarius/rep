@@ -1,0 +1,4260 @@
+[
+ {
+  "id": "leg-press",
+  "name": "Leg press",
+  "aka": [
+   "Seated leg press"
+  ],
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "adductors"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "Builds the big muscles of your legs and bum with a fixed path, so you can push hard without worrying about balance.",
+  "cue": "Push through your whole foot, stop short of locking your knees.",
+  "setup": [
+   "Sit with your back and head flat against the pad.",
+   "Put your feet on the platform about shoulder-width apart, in the middle of the plate.",
+   "Hold the side handles and release the safety catches."
+  ],
+  "execution": [
+   "Lower the platform slowly by bending your knees toward your chest.",
+   "Go down until your knees are at about a right angle, or just before your lower back starts to lift off the pad.",
+   "Push the platform away through your whole foot until your legs are almost straight.",
+   "Keep your knees pointing the same way as your toes the whole time."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front of your thighs and your glutes.",
+  "commonMistakes": [
+   "Locking the knees hard at the top",
+   "Letting the lower back curl off the pad at the bottom",
+   "Knees caving inward",
+   "Bouncing out of the bottom"
+  ],
+  "safety": "Always re-engage the safety catches before getting out. Never fully lock your knees under load.",
+  "regressionId": "bodyweight-squat",
+  "progressionId": "hack-squat",
+  "substitutes": [
+   "hack-squat",
+   "goblet-squat",
+   "smith-squat"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 90,
+  "media": {
+   "datasetId": "Leg_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Leg+press+proper+form",
+   "images": [
+    "exercise-media/leg-press-0.webp",
+    "exercise-media/leg-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "chest-press-machine",
+  "name": "Chest press machine",
+  "aka": [
+   "Seated chest press"
+  ],
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "front-delts"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "Builds your chest, front shoulders and triceps on a guided path, the safest way to learn pressing.",
+  "cue": "Shoulder blades back and down, press out without shrugging.",
+  "setup": [
+   "Adjust the seat so the handles line up with the middle of your chest.",
+   "Sit tall with your back against the pad and feet flat on the floor.",
+   "Grab the handles with your wrists straight."
+  ],
+  "execution": [
+   "Squeeze your shoulder blades together and keep them there.",
+   "Press the handles forward until your arms are straight but not locked.",
+   "Slowly let the handles come back until you feel a stretch across your chest.",
+   "Keep your elbows a little below shoulder height, not flared straight out."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "Across your chest, with some work in the front of your shoulders and the back of your arms.",
+  "commonMistakes": [
+   "Seat too low or too high",
+   "Shoulders rolling forward at the end of the press",
+   "Letting the weight stack slam between reps",
+   "Flaring elbows straight out to the sides"
+  ],
+  "regressionId": "incline-push-up",
+  "progressionId": "dumbbell-bench-press",
+  "substitutes": [
+   "dumbbell-bench-press",
+   "push-up",
+   "pec-deck"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 50,
+  "media": {
+   "datasetId": "Leverage_Chest_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Chest+press+machine+proper+form",
+   "images": [
+    "exercise-media/chest-press-machine-0.webp",
+    "exercise-media/chest-press-machine-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "lat-pulldown",
+  "name": "Lat pulldown",
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "upper-back",
+   "rear-delts"
+  ],
+  "equipment": [
+   "cable",
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "Builds the wide muscles of your back (the ones that make a V-shape) and teaches the pull-up motion.",
+  "cue": "Pull your elbows down to your back pockets, chest up.",
+  "setup": [
+   "Set the thigh pad so your legs are locked in snugly.",
+   "Grab the bar a bit wider than shoulder-width with palms facing away.",
+   "Sit down with arms straight overhead and lean back just slightly."
+  ],
+  "execution": [
+   "Start by pulling your shoulders down away from your ears.",
+   "Pull the bar down to your upper chest, driving your elbows down and slightly back.",
+   "Pause briefly with your chest up to meet the bar.",
+   "Let the bar rise slowly until your arms are straight again."
+  ],
+  "breathing": "Breathe out as you pull down, breathe in as the bar goes back up.",
+  "feelItIn": "The sides of your back under your armpits, plus your biceps.",
+  "commonMistakes": [
+   "Leaning way back and turning it into a row",
+   "Pulling the bar behind your neck",
+   "Using momentum by rocking",
+   "Letting the bar yank your arms up fast"
+  ],
+  "progressionId": "assisted-pull-up",
+  "substitutes": [
+   "assisted-pull-up",
+   "straight-arm-pulldown",
+   "chin-up"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 60,
+  "media": {
+   "datasetId": "Wide-Grip_Lat_Pulldown",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Lat+pulldown+proper+form",
+   "images": [
+    "exercise-media/lat-pulldown-0.webp",
+    "exercise-media/lat-pulldown-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "seated-leg-curl",
+  "name": "Seated leg curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "Strengthens the back of your thighs, which protects your knees and balances all the cycling you do.",
+  "cue": "Curl your heels down and under, hips stay glued to the seat.",
+  "setup": [
+   "Sit with the back of your knees at the edge of the seat and knees lined up with the machine's pivot point.",
+   "Put the lower pad just above your heels and lower the thigh pad onto your legs.",
+   "Hold the handles."
+  ],
+  "execution": [
+   "Curl your heels down and back as far as you comfortably can.",
+   "Squeeze the back of your thighs for a moment.",
+   "Let the pad come back up slowly until your legs are nearly straight."
+  ],
+  "breathing": "Breathe out as you curl, in as you return.",
+  "feelItIn": "The back of your thighs.",
+  "commonMistakes": [
+   "Lifting your hips off the seat",
+   "Letting the weight snap back up",
+   "Doing half reps"
+  ],
+  "substitutes": [
+   "lying-leg-curl",
+   "dumbbell-rdl"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 40,
+  "media": {
+   "datasetId": "Seated_Leg_Curl",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Seated+leg+curl+proper+form",
+   "images": [
+    "exercise-media/seated-leg-curl-0.webp",
+    "exercise-media/seated-leg-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "shoulder-press-machine",
+  "name": "Shoulder press machine",
+  "pattern": "vertical-push",
+  "primaryMuscles": [
+   "front-delts",
+   "side-delts"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "upper-back"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "Builds strong, rounder shoulders and teaches the overhead press on a guided path.",
+  "cue": "Ribs down, press straight up, don't shrug.",
+  "setup": [
+   "Set the seat so the handles start at about shoulder height.",
+   "Sit tall with your back against the pad.",
+   "Grip the handles with wrists straight above your elbows."
+  ],
+  "execution": [
+   "Press the handles up until your arms are nearly straight.",
+   "Keep your lower back on the pad; don't arch.",
+   "Lower slowly back to shoulder height."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front and sides of your shoulders, and the back of your arms.",
+  "commonMistakes": [
+   "Arching your lower back to push more",
+   "Shrugging the shoulders up to your ears",
+   "Seat set so low the handles start below your chin"
+  ],
+  "progressionId": "dumbbell-shoulder-press",
+  "substitutes": [
+   "dumbbell-shoulder-press",
+   "overhead-press"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 30,
+  "media": {
+   "datasetId": "Leverage_Shoulder_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Shoulder+press+machine+proper+form",
+   "images": [
+    "exercise-media/shoulder-press-machine-0.webp",
+    "exercise-media/shoulder-press-machine-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "plank",
+  "name": "Plank",
+  "aka": [
+   "Front plank"
+  ],
+  "pattern": "core-anti-extension",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques",
+   "glutes",
+   "front-delts"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 1,
+  "purpose": "Teaches your midsection to hold your spine still, which is what your core really does when you lift heavy.",
+  "cue": "Squeeze your glutes, push the floor away, body in a straight line.",
+  "setup": [
+   "Lie face down and prop yourself on your forearms, elbows under your shoulders.",
+   "Lift your hips so your body forms a straight line from head to heels."
+  ],
+  "execution": [
+   "Squeeze your glutes and tighten your stomach.",
+   "Push your forearms into the floor so your upper back stays wide.",
+   "Hold the position, breathing slowly. Stop when your hips start to sag."
+  ],
+  "breathing": "Breathe slowly and shallowly through your nose; don't hold your breath.",
+  "feelItIn": "Your stomach working hard to keep your hips from dropping.",
+  "commonMistakes": [
+   "Hips sagging toward the floor",
+   "Bum sticking up in the air",
+   "Holding your breath",
+   "Looking up and straining your neck"
+  ],
+  "regressionId": "knee-plank",
+  "progressionId": "ab-wheel",
+  "substitutes": [
+   "dead-bug",
+   "side-plank"
+  ],
+  "loadType": "time",
+  "measure": "seconds",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "datasetId": "Plank",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Plank+proper+form",
+   "images": [
+    "exercise-media/plank-0.webp",
+    "exercise-media/plank-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "goblet-squat",
+  "name": "Goblet squat",
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "abs",
+   "upper-back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 1,
+  "purpose": "The easiest way to learn the squat: holding the weight in front keeps you upright and balanced.",
+  "cue": "Elbows down, chest up, sit between your heels.",
+  "setup": [
+   "Hold one dumbbell vertically against your chest, both hands cupping the top end.",
+   "Stand with feet a little wider than shoulder-width, toes turned out slightly."
+  ],
+  "execution": [
+   "Take a breath and brace your stomach.",
+   "Sit down between your heels, keeping your chest up and the dumbbell close.",
+   "Go down until your hips are at least level with your knees (deeper is fine if your back stays flat).",
+   "Drive up through your whole foot to stand tall."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "The front of your thighs and your glutes. Your upper back works to hold the weight.",
+  "commonMistakes": [
+   "Heels lifting off the floor",
+   "Knees caving in on the way up",
+   "Leaning forward and letting the dumbbell drift away",
+   "Cutting depth short"
+  ],
+  "regressionId": "bodyweight-squat",
+  "progressionId": "barbell-back-squat",
+  "substitutes": [
+   "leg-press",
+   "smith-squat",
+   "split-squat"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 25,
+  "media": {
+   "datasetId": "Goblet_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Goblet+squat+proper+form",
+   "images": [
+    "exercise-media/goblet-squat-0.webp",
+    "exercise-media/goblet-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "seated-cable-row",
+  "name": "Seated cable row",
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "upper-back",
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "rear-delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 1,
+  "purpose": "Builds the middle of your back for better posture and balances all the pushing exercises.",
+  "cue": "Chest tall, pull the handle to your belly button, squeeze your shoulder blades.",
+  "setup": [
+   "Attach a close-grip (V) handle. Sit with your feet on the platform, knees slightly bent.",
+   "Grab the handle and sit tall with your arms straight and back flat."
+  ],
+  "execution": [
+   "Pull the handle toward your belly button, driving your elbows back close to your sides.",
+   "Squeeze your shoulder blades together at the end.",
+   "Let your arms straighten slowly, feeling a stretch across your upper back, without rounding your lower back."
+  ],
+  "breathing": "Breathe out as you pull, in as you return.",
+  "feelItIn": "Between and around your shoulder blades.",
+  "commonMistakes": [
+   "Rocking your whole body back and forth",
+   "Rounding your lower back on the return",
+   "Shrugging the shoulders up",
+   "Pulling with the arms only"
+  ],
+  "progressionId": "chest-supported-row",
+  "substitutes": [
+   "machine-row",
+   "one-arm-dumbbell-row",
+   "chest-supported-row"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 60,
+  "media": {
+   "datasetId": "Seated_Cable_Rows",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Seated+cable+row+proper+form",
+   "images": [
+    "exercise-media/seated-cable-row-0.webp",
+    "exercise-media/seated-cable-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "incline-dumbbell-press",
+  "name": "Incline dumbbell press",
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest",
+   "front-delts"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 1,
+  "purpose": "Builds your upper chest and front shoulders, the part that makes the chest look full in a T-shirt.",
+  "cue": "Shoulder blades pinned, lower to the upper chest, press up and slightly in.",
+  "setup": [
+   "Set the bench to a low incline (about 30°).",
+   "Sit with a dumbbell on each thigh, then lie back and bring them up to your shoulders as you go.",
+   "Plant your feet and squeeze your shoulder blades together."
+  ],
+  "execution": [
+   "Press the dumbbells up over your upper chest until your arms are straight.",
+   "Lower them slowly to the sides of your upper chest, elbows at about 45° from your body.",
+   "Feel a stretch in your chest at the bottom, then press up again."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "Your upper chest and the front of your shoulders.",
+  "commonMistakes": [
+   "Bench too steep (turns it into a shoulder press)",
+   "Elbows flared straight out",
+   "Bouncing the weights at the bottom",
+   "Lifting your bum off the bench"
+  ],
+  "safety": "To finish, bring the dumbbells to your chest and sit up with them, or lower them to the floor beside you with control. Never drop them over your face.",
+  "regressionId": "chest-press-machine",
+  "progressionId": "incline-bench-press",
+  "substitutes": [
+   "incline-bench-press",
+   "chest-press-machine",
+   "push-up"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 20,
+  "media": {
+   "datasetId": "Incline_Dumbbell_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Incline+dumbbell+press+proper+form",
+   "images": [
+    "exercise-media/incline-dumbbell-press-0.webp",
+    "exercise-media/incline-dumbbell-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dumbbell-rdl",
+  "name": "Dumbbell Romanian deadlift",
+  "aka": [
+   "DB RDL"
+  ],
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "hamstrings",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "lower-back",
+   "forearms"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 1,
+  "purpose": "Teaches the hip hinge, the most important movement for a strong back, glutes and hamstrings.",
+  "cue": "Push your hips back, keep the dumbbells close, back flat.",
+  "setup": [
+   "Stand with feet hip-width apart, a dumbbell in each hand in front of your thighs.",
+   "Unlock your knees slightly and pull your shoulders back."
+  ],
+  "execution": [
+   "Push your hips back as if closing a door behind you with your bum.",
+   "Let the dumbbells slide down the front of your legs, keeping your back flat.",
+   "Stop when you feel a strong stretch in the back of your thighs (usually around mid-shin).",
+   "Drive your hips forward to stand up, squeezing your glutes at the top."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "A big stretch in the back of your thighs, then your glutes working to stand up.",
+  "commonMistakes": [
+   "Rounding your back to reach lower",
+   "Bending the knees a lot so it becomes a squat",
+   "Letting the dumbbells drift away from your legs",
+   "Leaning back at the top"
+  ],
+  "safety": "If you feel it in your lower back rather than your hamstrings, go lighter and shorten the range.",
+  "regressionId": "glute-bridge",
+  "progressionId": "barbell-rdl",
+  "substitutes": [
+   "barbell-rdl",
+   "back-extension",
+   "seated-leg-curl"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 20,
+  "media": {
+   "datasetId": "Stiff-Legged_Dumbbell_Deadlift",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dumbbell+Romanian+deadlift+proper+form",
+   "images": [
+    "exercise-media/dumbbell-rdl-0.webp",
+    "exercise-media/dumbbell-rdl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dumbbell-curl",
+  "name": "Dumbbell curl",
+  "aka": [
+   "Biceps curl"
+  ],
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 1,
+  "purpose": "Builds the biceps on the front of your upper arm.",
+  "cue": "Elbows pinned to your sides, curl up, lower slowly.",
+  "setup": [
+   "Stand tall with a dumbbell in each hand, arms by your sides, palms facing forward."
+  ],
+  "execution": [
+   "Curl the dumbbells up by bending at the elbows only.",
+   "Squeeze at the top without letting your elbows drift forward.",
+   "Lower slowly until your arms are fully straight."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The front of your upper arms.",
+  "commonMistakes": [
+   "Swinging your body to lift the weight",
+   "Elbows moving forward",
+   "Cutting the bottom half of the rep short"
+  ],
+  "progressionId": "barbell-curl",
+  "substitutes": [
+   "hammer-curl",
+   "barbell-curl",
+   "preacher-curl"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 15,
+  "media": {
+   "datasetId": "Dumbbell_Bicep_Curl",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dumbbell+curl+proper+form",
+   "images": [
+    "exercise-media/dumbbell-curl-0.webp",
+    "exercise-media/dumbbell-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "triceps-pushdown",
+  "name": "Cable triceps pushdown",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "cable"
+  ],
+  "level": 1,
+  "purpose": "Builds the triceps on the back of your arm, which make up most of your upper-arm size.",
+  "cue": "Elbows glued to your sides, push down until your arms are straight.",
+  "setup": [
+   "Attach a straight bar or rope to a high cable.",
+   "Stand close, grab it with palms down, elbows tucked at your sides."
+  ],
+  "execution": [
+   "Push the handle down until your arms are fully straight.",
+   "Squeeze the back of your arms for a second.",
+   "Let it come back up until your forearms are about parallel to the floor, elbows staying put."
+  ],
+  "breathing": "Breathe out as you push down, in as you return.",
+  "feelItIn": "The back of your upper arms.",
+  "commonMistakes": [
+   "Elbows drifting forward and up",
+   "Leaning over and using body weight",
+   "Letting the handle rise to your face"
+  ],
+  "progressionId": "overhead-triceps-extension",
+  "substitutes": [
+   "overhead-triceps-extension",
+   "skull-crusher",
+   "dip"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "media": {
+   "datasetId": "Triceps_Pushdown",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Cable+triceps+pushdown+proper+form",
+   "images": [
+    "exercise-media/triceps-pushdown-0.webp",
+    "exercise-media/triceps-pushdown-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dead-bug",
+  "name": "Dead bug",
+  "pattern": "core-anti-extension",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 1,
+  "purpose": "A gentle but tough core exercise that teaches you to keep your lower back still while your arms and legs move.",
+  "cue": "Lower back pressed into the floor, move slowly, opposite arm and leg.",
+  "setup": [
+   "Lie on your back with arms pointing to the ceiling.",
+   "Lift your legs so your knees are bent at 90°, right above your hips.",
+   "Press your lower back flat into the floor."
+  ],
+  "execution": [
+   "Slowly lower one arm behind your head and the opposite leg toward the floor at the same time.",
+   "Stop just before your lower back starts to lift.",
+   "Bring them back and switch sides. Each side counts as one rep."
+  ],
+  "breathing": "Breathe out slowly as you extend, in as you return.",
+  "feelItIn": "Deep in your stomach, holding your lower back down.",
+  "commonMistakes": [
+   "Lower back arching off the floor",
+   "Rushing the reps",
+   "Holding your breath"
+  ],
+  "regressionId": "bird-dog",
+  "progressionId": "ab-wheel",
+  "substitutes": [
+   "plank",
+   "pallof-press",
+   "bird-dog"
+  ],
+  "loadType": "bodyweight",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "datasetId": "Dead_Bug",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dead+bug+proper+form",
+   "images": [
+    "exercise-media/dead-bug-0.webp",
+    "exercise-media/dead-bug-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "barbell-back-squat",
+  "name": "Barbell back squat",
+  "aka": [
+   "Back squat",
+   "Squat"
+  ],
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "lower-back",
+   "abs",
+   "hamstrings"
+  ],
+  "equipment": [
+   "barbell",
+   "rack"
+  ],
+  "level": 2,
+  "purpose": "The king of leg exercises: builds your legs, glutes and whole-body strength like nothing else.",
+  "cue": "Big breath, brace, sit down between your heels, drive up.",
+  "setup": [
+   "Set the bar in the rack at mid-chest height and the safety pins just below how low you'll squat.",
+   "Step under the bar and rest it on the meaty part of your upper back (not your neck). Grip it just outside your shoulders.",
+   "Stand up to lift it off, take two or three small steps back, feet shoulder-width, toes slightly out."
+  ],
+  "execution": [
+   "Take a big breath into your belly and brace.",
+   "Bend your hips and knees together and sit down between your heels, knees following your toes.",
+   "Go down until your hip crease is at least level with the top of your knees, back flat.",
+   "Drive up through your whole foot, chest up, until you're standing tall. Breathe, re-brace, repeat."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "Your thighs and glutes, with your whole midsection working hard to stay tight.",
+  "commonMistakes": [
+   "Bar sitting on the neck",
+   "Heels lifting or weight shifting to the toes",
+   "Knees caving in",
+   "Chest dropping so the squat turns into a good-morning",
+   "Not setting the safety pins"
+  ],
+  "safety": "Always squat inside the rack with the safety pins set. If a rep fails, sit down onto the pins and step out.",
+  "regressionId": "goblet-squat",
+  "progressionId": "front-squat",
+  "substitutes": [
+   "smith-squat",
+   "goblet-squat",
+   "leg-press",
+   "hack-squat"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Barbell_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+back+squat+proper+form",
+   "images": [
+    "exercise-media/barbell-back-squat-0.webp",
+    "exercise-media/barbell-back-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "smith-squat",
+  "name": "Smith machine squat",
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "hamstrings"
+  ],
+  "equipment": [
+   "smith"
+  ],
+  "level": 2,
+  "purpose": "A guided version of the squat: the bar runs on rails, so it's a good first step toward the free barbell.",
+  "cue": "Feet slightly in front of the bar, sit down and back, drive up.",
+  "setup": [
+   "Set the bar at mid-chest height and the safety stops just below your bottom position.",
+   "Get under the bar so it rests on your upper back, feet shoulder-width and a little in front of the bar.",
+   "Twist the bar to unhook it."
+  ],
+  "execution": [
+   "Brace and sit down until your thighs are about level with the floor.",
+   "Drive up through your whole foot to stand tall.",
+   "Twist the bar back onto the hooks when you're done."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "Your thighs and glutes.",
+  "commonMistakes": [
+   "Feet directly under the bar (puts stress on the knees)",
+   "Not setting the safety stops",
+   "Bouncing at the bottom"
+  ],
+  "safety": "Bar weights differ between Smith machines (some are counter-balanced). Log the same way every time and progress from there.",
+  "regressionId": "goblet-squat",
+  "progressionId": "barbell-back-squat",
+  "substitutes": [
+   "barbell-back-squat",
+   "leg-press",
+   "goblet-squat"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "barLb": 20,
+  "media": {
+   "datasetId": "Smith_Machine_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Smith+machine+squat+proper+form",
+   "images": [
+    "exercise-media/smith-squat-0.webp",
+    "exercise-media/smith-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dumbbell-bench-press",
+  "name": "Dumbbell bench press",
+  "aka": [
+   "DB bench"
+  ],
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "front-delts"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 2,
+  "purpose": "Builds your chest, shoulders and triceps; each arm works on its own, which evens out weak sides.",
+  "cue": "Shoulder blades pinned, lower to mid-chest, elbows at 45°.",
+  "setup": [
+   "Sit on a flat bench with the dumbbells on your thighs.",
+   "Lie back and use your knees to help bring the dumbbells up beside your chest.",
+   "Plant your feet, squeeze your shoulder blades together and down."
+  ],
+  "execution": [
+   "Press the dumbbells up over your chest until your arms are straight.",
+   "Lower them slowly to the sides of your mid-chest, elbows at about 45° from your body.",
+   "Feel a stretch across your chest, then press back up."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "Across your chest and in the back of your arms.",
+  "commonMistakes": [
+   "Elbows flared straight out to the sides",
+   "Dumbbells drifting toward your face",
+   "Bum lifting off the bench",
+   "Dropping the weights at the end"
+  ],
+  "safety": "To finish, bring the dumbbells to your chest, then roll up to sitting with them on your thighs.",
+  "regressionId": "chest-press-machine",
+  "progressionId": "bench-press",
+  "substitutes": [
+   "chest-press-machine",
+   "bench-press",
+   "push-up"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "startLb": 25,
+  "media": {
+   "datasetId": "Dumbbell_Bench_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dumbbell+bench+press+proper+form",
+   "images": [
+    "exercise-media/dumbbell-bench-press-0.webp",
+    "exercise-media/dumbbell-bench-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "chest-supported-row",
+  "name": "Chest-supported dumbbell row",
+  "aka": [
+   "Incline dumbbell row"
+  ],
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "upper-back",
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "rear-delts",
+   "biceps"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 2,
+  "purpose": "Builds your upper back with your chest resting on a bench, so your lower back gets a break.",
+  "cue": "Chest on the pad, pull elbows back toward your hips, squeeze.",
+  "setup": [
+   "Set a bench to about 30–45° and lie face down on it, chest at the top edge.",
+   "Let a dumbbell hang straight down in each hand, palms facing each other."
+  ],
+  "execution": [
+   "Pull the dumbbells up and back toward your hips, elbows close to your body.",
+   "Squeeze your shoulder blades together at the top.",
+   "Lower slowly until your arms are straight."
+  ],
+  "breathing": "Breathe out as you pull, in as you lower.",
+  "feelItIn": "Your upper back and the back of your shoulders.",
+  "commonMistakes": [
+   "Lifting your chest off the bench to cheat",
+   "Shrugging instead of pulling back",
+   "Using a weight so heavy the reps get short"
+  ],
+  "regressionId": "seated-cable-row",
+  "progressionId": "barbell-row",
+  "substitutes": [
+   "seated-cable-row",
+   "one-arm-dumbbell-row",
+   "machine-row"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 20,
+  "media": {
+   "datasetId": "Dumbbell_Incline_Row",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Chest-supported+dumbbell+row+proper+form",
+   "images": [
+    "exercise-media/chest-supported-row-0.webp",
+    "exercise-media/chest-supported-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dumbbell-shoulder-press",
+  "name": "Dumbbell shoulder press",
+  "pattern": "vertical-push",
+  "primaryMuscles": [
+   "front-delts",
+   "side-delts"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "upper-back"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 2,
+  "purpose": "Builds strong, broad shoulders; free weights also train the small stabilising muscles.",
+  "cue": "Ribs down, press up and slightly in, don't arch.",
+  "setup": [
+   "Set a bench upright (or nearly). Sit with a dumbbell on each thigh.",
+   "Kick them up one at a time to shoulder height, palms facing forward."
+  ],
+  "execution": [
+   "Press the dumbbells up until your arms are straight overhead.",
+   "Lower slowly back to shoulder height."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front and sides of your shoulders and the back of your arms.",
+  "commonMistakes": [
+   "Arching your lower back",
+   "Lowering only halfway",
+   "Banging the dumbbells together at the top"
+  ],
+  "regressionId": "shoulder-press-machine",
+  "progressionId": "overhead-press",
+  "substitutes": [
+   "shoulder-press-machine",
+   "overhead-press"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 15,
+  "media": {
+   "datasetId": "Dumbbell_Shoulder_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dumbbell+shoulder+press+proper+form",
+   "images": [
+    "exercise-media/dumbbell-shoulder-press-0.webp",
+    "exercise-media/dumbbell-shoulder-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "face-pull",
+  "name": "Cable face pull",
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "rear-delts",
+   "upper-back"
+  ],
+  "secondaryMuscles": [
+   "side-delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 2,
+  "purpose": "Strengthens the back of your shoulders and upper back, which protects your shoulders and improves posture.",
+  "cue": "Pull the rope to your eyes, hands apart, elbows high.",
+  "setup": [
+   "Set a rope on a cable at about face height.",
+   "Grab the ends with palms facing down and step back until your arms are straight."
+  ],
+  "execution": [
+   "Pull the rope toward your eyes, pulling the ends apart as you go.",
+   "Finish with your hands beside your ears and elbows high, like a double-biceps pose.",
+   "Return slowly."
+  ],
+  "breathing": "Breathe out as you pull, in as you return.",
+  "feelItIn": "The back of your shoulders and between your shoulder blades.",
+  "commonMistakes": [
+   "Going too heavy and leaning back",
+   "Pulling to the chest instead of the face",
+   "Elbows dropping low"
+  ],
+  "substitutes": [
+   "rear-delt-fly",
+   "reverse-pec-deck"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 20,
+  "media": {
+   "datasetId": "Face_Pull",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Cable+face+pull+proper+form",
+   "images": [
+    "exercise-media/face-pull-0.webp",
+    "exercise-media/face-pull-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "pallof-press",
+  "name": "Pallof press",
+  "pattern": "core-anti-rotation",
+  "primaryMuscles": [
+   "obliques",
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 2,
+  "purpose": "Trains your core to resist twisting, which makes you steadier in every other lift.",
+  "cue": "Stand tall, press straight out, don't let the cable turn you.",
+  "setup": [
+   "Set a cable handle at chest height. Stand side-on to the machine, a big step away.",
+   "Hold the handle with both hands at your chest, feet shoulder-width."
+  ],
+  "execution": [
+   "Press the handle straight out in front of your chest.",
+   "Hold for a second while the cable tries to twist you toward it.",
+   "Bring it back to your chest. Do all reps, then turn around for the other side."
+  ],
+  "breathing": "Breathe out as you press, in as you return.",
+  "feelItIn": "The sides of your stomach.",
+  "commonMistakes": [
+   "Standing too close (no tension)",
+   "Letting the hips rotate",
+   "Leaning away from the machine"
+  ],
+  "regressionId": "dead-bug",
+  "progressionId": "suitcase-carry",
+  "substitutes": [
+   "side-plank",
+   "dead-bug",
+   "suitcase-carry"
+  ],
+  "loadType": "stack",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "startLb": 15,
+  "media": {
+   "datasetId": "Pallof_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Pallof+press+proper+form",
+   "images": [
+    "exercise-media/pallof-press-0.webp",
+    "exercise-media/pallof-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "barbell-rdl",
+  "name": "Barbell Romanian deadlift",
+  "aka": [
+   "RDL"
+  ],
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "hamstrings",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "lower-back",
+   "upper-back",
+   "forearms"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "level": 2,
+  "purpose": "The barbell version of the hip hinge: builds powerful hamstrings, glutes and a strong back.",
+  "cue": "Hips back, bar slides down your thighs, back flat.",
+  "setup": [
+   "Set the bar in a rack at mid-thigh height (or deadlift it from the floor).",
+   "Grip it just outside your thighs, stand tall, shoulders back."
+  ],
+  "execution": [
+   "Unlock your knees and push your hips back.",
+   "Slide the bar down your thighs, keeping it touching your legs and your back flat.",
+   "Stop just below the knees, or when your hamstrings stop you.",
+   "Drive your hips forward to stand tall, squeezing your glutes."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "A deep stretch in your hamstrings and hard work in your glutes.",
+  "commonMistakes": [
+   "Rounding the back",
+   "Bar drifting away from the legs",
+   "Squatting the weight down",
+   "Leaning back at the top"
+  ],
+  "safety": "Your lower back should feel worked, never strained. If it does, go lighter and shorten the range.",
+  "regressionId": "dumbbell-rdl",
+  "progressionId": "deadlift",
+  "substitutes": [
+   "dumbbell-rdl",
+   "back-extension",
+   "trap-bar-deadlift"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Romanian_Deadlift",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+Romanian+deadlift+proper+form",
+   "images": [
+    "exercise-media/barbell-rdl-0.webp",
+    "exercise-media/barbell-rdl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "assisted-pull-up",
+  "name": "Assisted pull-up",
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "upper-back",
+   "rear-delts"
+  ],
+  "equipment": [
+   "machine",
+   "pullup-bar"
+  ],
+  "level": 2,
+  "purpose": "A pull-up with help from a machine or band, so you can build toward doing them on your own.",
+  "cue": "Chest up to the bar, pull your elbows down to your ribs.",
+  "setup": [
+   "On an assisted pull-up machine, choose the help amount (more weight = more help).",
+   "Kneel or stand on the pad and grab the handles a bit wider than your shoulders.",
+   "No machine? Loop a resistance band over the bar and put a knee or foot in it."
+  ],
+  "execution": [
+   "Hang with arms straight, then pull your shoulders down.",
+   "Pull yourself up until your chin is over the bar, elbows driving down.",
+   "Lower slowly all the way until your arms are straight."
+  ],
+  "breathing": "Breathe out as you pull up, in as you lower.",
+  "feelItIn": "The sides of your back and your biceps.",
+  "commonMistakes": [
+   "Kicking or swinging",
+   "Half reps that don't fully straighten the arms",
+   "Shrugging at the top"
+  ],
+  "safety": "On the machine, the number is help, so a lower number means you're stronger.",
+  "regressionId": "lat-pulldown",
+  "progressionId": "pull-up",
+  "substitutes": [
+   "lat-pulldown",
+   "negative-pull-up",
+   "chin-up"
+  ],
+  "loadType": "assisted",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Band_Assisted_Pull-Up",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Assisted+pull-up+proper+form",
+   "images": [
+    "exercise-media/assisted-pull-up-0.webp",
+    "exercise-media/assisted-pull-up-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "split-squat",
+  "name": "Split squat",
+  "pattern": "lunge",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "hamstrings"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bodyweight"
+  ],
+  "level": 2,
+  "purpose": "Trains one leg at a time for balance and evens out differences between your legs; great for cycling too.",
+  "cue": "Drop your back knee straight down, front foot flat.",
+  "setup": [
+   "Stand in a long stride, one foot forward and one back, feet hip-width apart (like on train tracks, not a tightrope).",
+   "Hold a dumbbell in each hand, or none to start. Lift your back heel."
+  ],
+  "execution": [
+   "Lower your back knee straight down toward the floor.",
+   "Stop just before it touches; your front shin should be fairly upright.",
+   "Push through your front foot to come back up. Do all reps on one leg, then switch."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front thigh and glute of your front leg.",
+  "commonMistakes": [
+   "Stance too short so the front knee shoots forward",
+   "Front heel lifting",
+   "Feet in one line, making it wobbly",
+   "Leaning far forward"
+  ],
+  "regressionId": "bodyweight-squat",
+  "progressionId": "bulgarian-split-squat",
+  "substitutes": [
+   "reverse-lunge",
+   "bulgarian-split-squat",
+   "leg-press"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 10,
+  "media": {
+   "datasetId": "Split_Squat_with_Dumbbells",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Split+squat+proper+form",
+   "images": [
+    "exercise-media/split-squat-0.webp",
+    "exercise-media/split-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "farmer-carry",
+  "name": "Farmer carry",
+  "aka": [
+   "Farmer's walk"
+  ],
+  "pattern": "carry",
+  "primaryMuscles": [
+   "forearms",
+   "upper-back"
+  ],
+  "secondaryMuscles": [
+   "abs",
+   "obliques",
+   "glutes"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 2,
+  "purpose": "Walking with heavy dumbbells: builds grip, traps and a rock-solid core. Simple and very effective.",
+  "cue": "Stand tall, shoulders back, walk with short steady steps.",
+  "setup": [
+   "Put two heavy dumbbells by your feet.",
+   "Squat down, grab them and stand up tall."
+  ],
+  "execution": [
+   "Walk with short, even steps, keeping your shoulders back and chest up.",
+   "Keep your stomach tight and don't let the weights swing.",
+   "Walk for the target time, turning around as needed, then put them down carefully."
+  ],
+  "breathing": "Breathe steadily; don't hold your breath.",
+  "feelItIn": "Your grip, shoulders and the whole trunk.",
+  "commonMistakes": [
+   "Shoulders rounding forward",
+   "Leaning to one side",
+   "Dropping the weights at the end"
+  ],
+  "progressionId": "suitcase-carry",
+  "substitutes": [
+   "suitcase-carry"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "measure": "seconds",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 35,
+  "media": {
+   "datasetId": "Farmers_Walk",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Farmer+carry+proper+form",
+   "images": [
+    "exercise-media/farmer-carry-0.webp",
+    "exercise-media/farmer-carry-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "one-arm-dumbbell-row",
+  "name": "One-arm dumbbell row",
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "lats",
+   "upper-back"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "rear-delts"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 2,
+  "purpose": "Builds the back one side at a time, with a big stretch and a strong squeeze.",
+  "cue": "Flat back, pull the dumbbell to your hip.",
+  "setup": [
+   "Put one knee and the same-side hand on a flat bench, back flat like a table.",
+   "Hold a dumbbell in the other hand, arm hanging straight down."
+  ],
+  "execution": [
+   "Pull the dumbbell up toward your hip, elbow close to your body.",
+   "Squeeze your back at the top, then lower slowly until your arm is straight.",
+   "Do all reps on one side, then switch."
+  ],
+  "breathing": "Breathe out as you pull, in as you lower.",
+  "feelItIn": "The side of your back and behind your shoulder.",
+  "commonMistakes": [
+   "Twisting your torso to lift the weight",
+   "Pulling toward the chest instead of the hip",
+   "Rounding your back"
+  ],
+  "regressionId": "chest-supported-row",
+  "progressionId": "barbell-row",
+  "substitutes": [
+   "chest-supported-row",
+   "seated-cable-row",
+   "machine-row"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 25,
+  "media": {
+   "datasetId": "One-Arm_Dumbbell_Row",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=One-arm+dumbbell+row+proper+form",
+   "images": [
+    "exercise-media/one-arm-dumbbell-row-0.webp",
+    "exercise-media/one-arm-dumbbell-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "back-extension",
+  "name": "Back extension",
+  "aka": [
+   "Hyperextension"
+  ],
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "glutes",
+   "hamstrings",
+   "lower-back"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "bench",
+   "bodyweight"
+  ],
+  "level": 2,
+  "purpose": "Strengthens your glutes, hamstrings and lower back in a safe, controlled way.",
+  "cue": "Hinge at the hips, rise until your body is straight, squeeze your glutes.",
+  "setup": [
+   "Set the 45° back-extension bench so the pad sits just below your hip bones.",
+   "Lock your heels under the foot pads, cross your arms on your chest."
+  ],
+  "execution": [
+   "Lower your upper body by bending at the hips, keeping your back flat.",
+   "Rise back up until your body is in a straight line, squeezing your glutes.",
+   "Don't arch past straight. To make it harder, hold a weight plate on your chest."
+  ],
+  "breathing": "Breathe in on the way down, out on the way up.",
+  "feelItIn": "Your glutes and hamstrings, with your lower back holding steady.",
+  "commonMistakes": [
+   "Swinging up fast",
+   "Over-arching at the top",
+   "Pad too high so you can't bend at the hips"
+  ],
+  "regressionId": "glute-bridge",
+  "progressionId": "barbell-rdl",
+  "substitutes": [
+   "dumbbell-rdl",
+   "glute-bridge",
+   "hip-thrust"
+  ],
+  "loadType": "bodyweight",
+  "canAddWeight": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Hyperextensions_Back_Extensions",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Back+extension+proper+form",
+   "images": [
+    "exercise-media/back-extension-0.webp",
+    "exercise-media/back-extension-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "side-plank",
+  "name": "Side plank",
+  "pattern": "core-anti-rotation",
+  "primaryMuscles": [
+   "obliques"
+  ],
+  "secondaryMuscles": [
+   "abs",
+   "glutes",
+   "side-delts"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 2,
+  "purpose": "Strengthens the sides of your core, which keeps your hips level when walking, cycling and carrying.",
+  "cue": "Hips high, body in one straight line.",
+  "setup": [
+   "Lie on your side, propped on your forearm with your elbow under your shoulder.",
+   "Stack your feet (or stagger them for balance)."
+  ],
+  "execution": [
+   "Lift your hips until your body is straight from head to feet.",
+   "Hold, breathing slowly. Do one side, then the other."
+  ],
+  "breathing": "Breathe slowly and steadily.",
+  "feelItIn": "The side of your waist closest to the floor.",
+  "commonMistakes": [
+   "Hips sagging down",
+   "Rolling forward or back",
+   "Shoulder shrugged up to the ear"
+  ],
+  "regressionId": "knee-plank",
+  "progressionId": "suitcase-carry",
+  "substitutes": [
+   "pallof-press",
+   "suitcase-carry"
+  ],
+  "loadType": "time",
+  "measure": "seconds",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "datasetId": "Side_Bridge",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Side+plank+proper+form",
+   "images": [
+    "exercise-media/side-plank-0.webp",
+    "exercise-media/side-plank-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "bench-press",
+  "name": "Barbell bench press",
+  "aka": [
+   "Bench"
+  ],
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "front-delts"
+  ],
+  "equipment": [
+   "barbell",
+   "bench",
+   "rack"
+  ],
+  "level": 3,
+  "purpose": "The classic upper-body strength lift: builds chest, shoulders and triceps.",
+  "cue": "Shoulder blades pinned, bar to lower chest, press back over your shoulders.",
+  "setup": [
+   "Lie on the bench with your eyes directly under the bar. Set the safety arms just below chest height.",
+   "Grip the bar a little wider than shoulder-width, wrists straight.",
+   "Plant your feet, squeeze your shoulder blades together and down, and unrack the bar over your shoulders."
+  ],
+  "execution": [
+   "Lower the bar under control to your lower chest, elbows at about 45°.",
+   "Touch lightly (no bounce), then press back up and slightly back toward your face.",
+   "Finish with arms straight and the bar over your shoulders."
+  ],
+  "breathing": "Breathe in and hold at the top, lower and press, breathe out at the top.",
+  "feelItIn": "Across your chest and the back of your arms.",
+  "commonMistakes": [
+   "Bouncing the bar off your chest",
+   "Elbows flared straight out",
+   "Bum lifting off the bench",
+   "Wrists bent back"
+  ],
+  "safety": "Always use the safety arms or a spotter. Never bench with collars off if you might need to tilt the bar to escape; use the safeties instead.",
+  "regressionId": "dumbbell-bench-press",
+  "progressionId": "close-grip-bench-press",
+  "substitutes": [
+   "dumbbell-bench-press",
+   "chest-press-machine",
+   "push-up"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 150,
+  "media": {
+   "datasetId": "Barbell_Bench_Press_-_Medium_Grip",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+bench+press+proper+form",
+   "images": [
+    "exercise-media/bench-press-0.webp",
+    "exercise-media/bench-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "deadlift",
+  "name": "Deadlift",
+  "aka": [
+   "Conventional deadlift"
+  ],
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "glutes",
+   "hamstrings",
+   "lower-back"
+  ],
+  "secondaryMuscles": [
+   "quads",
+   "upper-back",
+   "forearms",
+   "lats"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "level": 3,
+  "purpose": "Lifts a barbell from the floor: builds strength through your whole back side, from grip to calves.",
+  "cue": "Bar over mid-foot, brace, push the floor away, bar stays touching your legs.",
+  "setup": [
+   "Stand with the bar over the middle of your feet, feet hip-width apart.",
+   "Bend down and grip the bar just outside your legs.",
+   "Bend your knees until your shins touch the bar. Chest up, back flat, arms straight."
+  ],
+  "execution": [
+   "Take a big breath and brace. Pull the slack out of the bar (you'll hear a click).",
+   "Push the floor away with your legs; hips and shoulders rise together.",
+   "Once the bar passes your knees, drive your hips forward to stand tall.",
+   "Lower it by pushing your hips back first, then bending your knees once it passes them."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "Glutes, hamstrings and your whole back working to stay flat.",
+  "commonMistakes": [
+   "Rounding the back",
+   "Bar starting too far in front of the feet",
+   "Hips shooting up first",
+   "Jerking the bar off the floor",
+   "Leaning far back at the top"
+  ],
+  "safety": "If you can't keep your back flat, the weight is too heavy. Use bumper plates or blocks if you lack full-size plates.",
+  "regressionId": "trap-bar-deadlift",
+  "substitutes": [
+   "trap-bar-deadlift",
+   "barbell-rdl"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 180,
+  "startLb": 95,
+  "media": {
+   "datasetId": "Barbell_Deadlift",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Deadlift+proper+form",
+   "images": [
+    "exercise-media/deadlift-0.webp",
+    "exercise-media/deadlift-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "trap-bar-deadlift",
+  "name": "Trap-bar deadlift",
+  "aka": [
+   "Hex-bar deadlift"
+  ],
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "quads",
+   "glutes",
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "lower-back",
+   "upper-back",
+   "forearms"
+  ],
+  "equipment": [
+   "trap-bar"
+  ],
+  "level": 3,
+  "purpose": "A deadlift standing inside a hexagon bar. Easier on the back and easier to learn, but still great for strength.",
+  "cue": "Stand in the middle, chest up, push the floor away.",
+  "setup": [
+   "Stand in the centre of the trap bar, feet hip-width apart.",
+   "Squat down and grip the handles in the middle. Chest up, back flat."
+  ],
+  "execution": [
+   "Brace and push the floor away to stand up tall.",
+   "Lower by sitting your hips back and down under control."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "Your thighs, glutes and back.",
+  "commonMistakes": [
+   "Rounding the back",
+   "Gripping off-centre so the bar tips",
+   "Bouncing between reps"
+  ],
+  "regressionId": "dumbbell-rdl",
+  "progressionId": "deadlift",
+  "substitutes": [
+   "deadlift",
+   "barbell-rdl"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 180,
+  "startLb": 95,
+  "media": {
+   "datasetId": "Trap_Bar_Deadlift",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Trap-bar+deadlift+proper+form",
+   "images": [
+    "exercise-media/trap-bar-deadlift-0.webp",
+    "exercise-media/trap-bar-deadlift-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "overhead-press",
+  "name": "Overhead press",
+  "aka": [
+   "OHP",
+   "Military press",
+   "Standing press"
+  ],
+  "pattern": "vertical-push",
+  "primaryMuscles": [
+   "front-delts",
+   "side-delts"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "upper-back",
+   "abs"
+  ],
+  "equipment": [
+   "barbell",
+   "rack"
+  ],
+  "level": 3,
+  "purpose": "Pressing a barbell overhead standing up: builds big, strong shoulders and a stable core.",
+  "cue": "Squeeze glutes, ribs down, press straight up, head through at the top.",
+  "setup": [
+   "Set the bar in the rack at upper-chest height. Grip it just outside your shoulders.",
+   "Unrack it so it rests on the front of your shoulders, elbows slightly in front of the bar.",
+   "Stand with feet hip-width, squeeze your glutes and stomach."
+  ],
+  "execution": [
+   "Press the bar straight up, moving your head back slightly to let it pass.",
+   "Once it's past your forehead, push your head forward 'through the window' so the bar ends over your mid-foot.",
+   "Lower it under control back to your shoulders."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "Your shoulders and the back of your arms; your core keeps you from leaning back.",
+  "commonMistakes": [
+   "Leaning back a lot (turning it into a standing bench press)",
+   "Pressing the bar forward instead of straight up",
+   "Loose stomach and glutes"
+  ],
+  "regressionId": "dumbbell-shoulder-press",
+  "substitutes": [
+   "dumbbell-shoulder-press",
+   "shoulder-press-machine"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 150,
+  "media": {
+   "datasetId": "Standing_Military_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Overhead+press+proper+form",
+   "images": [
+    "exercise-media/overhead-press-0.webp",
+    "exercise-media/overhead-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "barbell-row",
+  "name": "Barbell row",
+  "aka": [
+   "Bent-over row"
+  ],
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "upper-back",
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "rear-delts",
+   "biceps",
+   "lower-back",
+   "hamstrings"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "level": 3,
+  "purpose": "Rowing a barbell while bent over: builds a thick, strong back.",
+  "cue": "Hinge to about 45°, pull the bar to your lower ribs, back flat.",
+  "setup": [
+   "Hold the bar with an overhand grip just outside your thighs.",
+   "Hinge forward from the hips to about 45°, knees softly bent, back flat."
+  ],
+  "execution": [
+   "Pull the bar to your lower ribs, driving your elbows back.",
+   "Squeeze your shoulder blades together at the top.",
+   "Lower until your arms are straight, staying in the bent-over position."
+  ],
+  "breathing": "Breathe out as you pull, in as you lower.",
+  "feelItIn": "Your upper and mid back; your hamstrings and lower back hold you in position.",
+  "commonMistakes": [
+   "Standing up more with each rep",
+   "Jerking the weight with your hips",
+   "Rounding the back"
+  ],
+  "regressionId": "chest-supported-row",
+  "substitutes": [
+   "chest-supported-row",
+   "seated-cable-row",
+   "one-arm-dumbbell-row"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Bent_Over_Barbell_Row",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+row+proper+form",
+   "images": [
+    "exercise-media/barbell-row-0.webp",
+    "exercise-media/barbell-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "pull-up",
+  "name": "Pull-up",
+  "aka": [
+   "Weighted pull-up"
+  ],
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "upper-back",
+   "rear-delts",
+   "forearms"
+  ],
+  "equipment": [
+   "pullup-bar",
+   "bodyweight"
+  ],
+  "level": 3,
+  "purpose": "Pulling your own body up to a bar: one of the best back builders and a real milestone of strength.",
+  "cue": "Shoulders down first, then pull your chest toward the bar.",
+  "setup": [
+   "Grab the bar with palms facing away, a bit wider than your shoulders.",
+   "Hang with arms straight and feet off the floor (bend your knees if needed)."
+  ],
+  "execution": [
+   "Pull your shoulders down away from your ears.",
+   "Pull yourself up until your chin is over the bar.",
+   "Lower slowly all the way to straight arms.",
+   "When all sets reach the top of your rep range, add weight with a dip belt or a dumbbell between your feet."
+  ],
+  "breathing": "Breathe out as you pull up, in as you lower.",
+  "feelItIn": "The sides of your back and your biceps.",
+  "commonMistakes": [
+   "Kipping or swinging",
+   "Half reps",
+   "Chin poking forward to 'reach' the bar"
+  ],
+  "regressionId": "assisted-pull-up",
+  "substitutes": [
+   "chin-up",
+   "assisted-pull-up",
+   "lat-pulldown"
+  ],
+  "loadType": "bodyweight",
+  "canAddWeight": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Pullups",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Pull-up+proper+form",
+   "images": [
+    "exercise-media/pull-up-0.webp",
+    "exercise-media/pull-up-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "chin-up",
+  "name": "Chin-up",
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats",
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "upper-back",
+   "forearms"
+  ],
+  "equipment": [
+   "pullup-bar",
+   "bodyweight"
+  ],
+  "level": 3,
+  "purpose": "A pull-up with palms facing you: usually a little easier and works the biceps harder.",
+  "cue": "Palms toward you, pull your chest to the bar.",
+  "setup": [
+   "Grab the bar with palms facing you, about shoulder-width.",
+   "Hang with arms straight."
+  ],
+  "execution": [
+   "Pull your shoulders down, then pull until your chin is over the bar.",
+   "Lower slowly to straight arms."
+  ],
+  "breathing": "Breathe out as you pull up, in as you lower.",
+  "feelItIn": "Your back and biceps.",
+  "commonMistakes": [
+   "Swinging",
+   "Not straightening the arms at the bottom"
+  ],
+  "regressionId": "assisted-pull-up",
+  "progressionId": "pull-up",
+  "substitutes": [
+   "pull-up",
+   "assisted-pull-up",
+   "lat-pulldown"
+  ],
+  "loadType": "bodyweight",
+  "canAddWeight": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Chin-Up",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Chin-up+proper+form",
+   "images": [
+    "exercise-media/chin-up-0.webp",
+    "exercise-media/chin-up-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "standing-calf-raise",
+  "name": "Standing calf raise",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "machine"
+  ],
+  "level": 3,
+  "purpose": "Builds the calf muscles of your lower legs, which also helps your cycling.",
+  "cue": "Full stretch at the bottom, pause high on your toes.",
+  "setup": [
+   "Stand on the machine's step with the balls of your feet on the edge and shoulders under the pads.",
+   "Let your heels hang down. No machine? Hold a dumbbell and use a step."
+  ],
+  "execution": [
+   "Rise up onto your toes as high as you can.",
+   "Pause for a second at the top.",
+   "Lower slowly until you feel a deep stretch in your calves."
+  ],
+  "breathing": "Breathe out going up, in going down.",
+  "feelItIn": "Your calves.",
+  "commonMistakes": [
+   "Bouncing quickly at the bottom",
+   "Bending the knees to help",
+   "Only doing the top half"
+  ],
+  "substitutes": [
+   "seated-calf-raise",
+   "leg-press-calf-raise"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 70,
+  "media": {
+   "datasetId": "Standing_Calf_Raises",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Standing+calf+raise+proper+form",
+   "images": [
+    "exercise-media/standing-calf-raise-0.webp",
+    "exercise-media/standing-calf-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "seated-calf-raise",
+  "name": "Seated calf raise",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "machine"
+  ],
+  "level": 3,
+  "purpose": "Works the deeper calf muscle, which shows up best with bent knees.",
+  "cue": "Slow stretch down, pause at the top.",
+  "setup": [
+   "Sit at the machine with the balls of your feet on the step and the pad on your lower thighs.",
+   "Release the safety lever."
+  ],
+  "execution": [
+   "Lower your heels as far as they go.",
+   "Rise up onto your toes and pause.",
+   "Lower slowly. Re-engage the lever at the end."
+  ],
+  "breathing": "Breathe out going up, in going down.",
+  "feelItIn": "Lower and deeper in your calves.",
+  "commonMistakes": [
+   "Bouncing",
+   "Short range of motion"
+  ],
+  "substitutes": [
+   "standing-calf-raise",
+   "leg-press-calf-raise"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 45,
+  "media": {
+   "datasetId": "Seated_Calf_Raise",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Seated+calf+raise+proper+form",
+   "images": [
+    "exercise-media/seated-calf-raise-0.webp",
+    "exercise-media/seated-calf-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "leg-press-calf-raise",
+  "name": "Calf press on the leg press",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "machine"
+  ],
+  "level": 3,
+  "purpose": "A calf exercise using the leg press, handy when the calf machine is taken.",
+  "cue": "Balls of the feet on the edge, push with your toes only.",
+  "setup": [
+   "Sit in the leg press with your legs straight (knees soft) and only the balls of your feet on the bottom edge of the platform.",
+   "Keep the safety catches engaged if your machine allows it."
+  ],
+  "execution": [
+   "Push the platform away by pointing your toes.",
+   "Let it come back slowly for a deep calf stretch."
+  ],
+  "breathing": "Breathe out as you push, in as you return.",
+  "feelItIn": "Your calves.",
+  "commonMistakes": [
+   "Bending the knees",
+   "Feet slipping too far down"
+  ],
+  "safety": "Keep your feet firmly on the platform; go lighter than you think.",
+  "substitutes": [
+   "standing-calf-raise",
+   "seated-calf-raise"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 90,
+  "media": {
+   "datasetId": "Calf_Press_On_The_Leg_Press_Machine",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Calf+press+on+the+leg+press+proper+form",
+   "images": [
+    "exercise-media/leg-press-calf-raise-0.webp",
+    "exercise-media/leg-press-calf-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "rear-delt-fly",
+  "name": "Rear delt fly",
+  "aka": [
+   "Reverse fly"
+  ],
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "rear-delts"
+  ],
+  "secondaryMuscles": [
+   "upper-back"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 3,
+  "purpose": "Builds the back of your shoulders for a rounder, more balanced look and healthier shoulders.",
+  "cue": "Arms wide like wings, lead with the elbows, light weight.",
+  "setup": [
+   "Sit on the end of a bench, lean forward with your chest near your knees.",
+   "Hold light dumbbells hanging under your legs, palms facing each other."
+  ],
+  "execution": [
+   "Lift the dumbbells out to the sides with slightly bent elbows until your arms are level with your body.",
+   "Pause, then lower slowly."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "The back of your shoulders.",
+  "commonMistakes": [
+   "Going too heavy and swinging",
+   "Shrugging up toward the ears",
+   "Straightening up mid-rep"
+  ],
+  "substitutes": [
+   "reverse-pec-deck",
+   "face-pull"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 5,
+  "media": {
+   "datasetId": "Seated_Bent-Over_Rear_Delt_Raise",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Rear+delt+fly+proper+form",
+   "images": [
+    "exercise-media/rear-delt-fly-0.webp",
+    "exercise-media/rear-delt-fly-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "reverse-pec-deck",
+  "name": "Reverse pec deck",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "rear-delts"
+  ],
+  "secondaryMuscles": [
+   "upper-back"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 3,
+  "purpose": "A machine version of the rear delt fly; very easy to feel the right muscle.",
+  "cue": "Chest on the pad, sweep your arms back, squeeze.",
+  "setup": [
+   "Set the machine handles to the rear position. Sit facing the pad.",
+   "Adjust the seat so the handles are at shoulder height."
+  ],
+  "execution": [
+   "Push the handles back and out in an arc until your arms are in line with your body.",
+   "Pause, then return slowly."
+  ],
+  "breathing": "Breathe out as you push back, in as you return.",
+  "feelItIn": "The back of your shoulders.",
+  "commonMistakes": [
+   "Using momentum",
+   "Shrugging"
+  ],
+  "substitutes": [
+   "rear-delt-fly",
+   "face-pull"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "media": {
+   "datasetId": "Reverse_Machine_Flyes",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Reverse+pec+deck+proper+form",
+   "images": [
+    "exercise-media/reverse-pec-deck-0.webp",
+    "exercise-media/reverse-pec-deck-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "barbell-curl",
+  "name": "Barbell curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": [
+   "barbell"
+  ],
+  "level": 3,
+  "purpose": "Builds the biceps with a bar, so you can use a bit more weight than with dumbbells.",
+  "cue": "Elbows still, curl the bar up, lower slowly.",
+  "setup": [
+   "Stand tall holding a barbell (or EZ-bar) with palms up, hands shoulder-width."
+  ],
+  "execution": [
+   "Curl the bar up toward your shoulders, keeping your elbows by your sides.",
+   "Squeeze, then lower slowly until your arms are straight."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The front of your upper arms.",
+  "commonMistakes": [
+   "Swinging the hips",
+   "Elbows drifting forward",
+   "Leaning back"
+  ],
+  "safety": "Fixed-weight or EZ bars are fine: log the total weight you lift.",
+  "regressionId": "dumbbell-curl",
+  "substitutes": [
+   "dumbbell-curl",
+   "hammer-curl",
+   "preacher-curl"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "barLb": 20,
+  "media": {
+   "datasetId": "Barbell_Curl",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+curl+proper+form",
+   "images": [
+    "exercise-media/barbell-curl-0.webp",
+    "exercise-media/barbell-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "preacher-curl",
+  "name": "Machine preacher curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "machine"
+  ],
+  "level": 3,
+  "purpose": "A biceps curl with your arms resting on a pad, so you can't cheat.",
+  "cue": "Arms flat on the pad, curl up, lower all the way.",
+  "setup": [
+   "Adjust the seat so your armpits are snug against the top of the pad.",
+   "Grip the handles with palms up."
+  ],
+  "execution": [
+   "Curl the handles up toward your shoulders.",
+   "Lower slowly until your arms are nearly straight."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The front of your upper arms.",
+  "commonMistakes": [
+   "Lifting the elbows off the pad",
+   "Stopping short at the bottom"
+  ],
+  "substitutes": [
+   "dumbbell-curl",
+   "barbell-curl"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "media": {
+   "datasetId": "Machine_Preacher_Curls",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Machine+preacher+curl+proper+form",
+   "images": [
+    "exercise-media/preacher-curl-0.webp",
+    "exercise-media/preacher-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "hanging-knee-raise",
+  "name": "Hanging knee raise",
+  "aka": [
+   "Captain's chair knee raise"
+  ],
+  "pattern": "core-flexion",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques",
+   "forearms"
+  ],
+  "equipment": [
+   "pullup-bar",
+   "bodyweight"
+  ],
+  "level": 3,
+  "purpose": "Strengthens your lower stomach and grip by lifting your knees while hanging from a bar.",
+  "cue": "Curl your hips up, no swinging.",
+  "setup": [
+   "Hang from a pull-up bar with straight arms (or use the arm pads of a captain's chair)."
+  ],
+  "execution": [
+   "Lift your knees toward your chest, curling your hips up at the top.",
+   "Lower your legs slowly until they're straight down. Stop any swing before the next rep."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "Your lower stomach.",
+  "commonMistakes": [
+   "Swinging",
+   "Only lifting the knees without curling the hips"
+  ],
+  "regressionId": "dead-bug",
+  "progressionId": "hanging-leg-raise",
+  "substitutes": [
+   "cable-crunch",
+   "dead-bug"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "datasetId": "Knee_Hip_Raise_On_Parallel_Bars",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Hanging+knee+raise+proper+form",
+   "images": [
+    "exercise-media/hanging-knee-raise-0.webp",
+    "exercise-media/hanging-knee-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "hanging-leg-raise",
+  "name": "Hanging leg raise",
+  "pattern": "core-flexion",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques",
+   "forearms"
+  ],
+  "equipment": [
+   "pullup-bar",
+   "bodyweight"
+  ],
+  "level": 5,
+  "purpose": "A harder version of the knee raise with straighter legs.",
+  "cue": "Legs nearly straight, lift with control, no swinging.",
+  "setup": [
+   "Hang from a pull-up bar with straight arms."
+  ],
+  "execution": [
+   "Keeping your legs nearly straight, lift them until they're level with your hips or higher.",
+   "Lower slowly."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "Your whole stomach, especially the lower part.",
+  "commonMistakes": [
+   "Swinging",
+   "Bending the knees a lot when tired"
+  ],
+  "regressionId": "hanging-knee-raise",
+  "substitutes": [
+   "hanging-knee-raise",
+   "ab-wheel"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Hanging_Leg_Raise",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Hanging+leg+raise+proper+form",
+   "images": [
+    "exercise-media/hanging-leg-raise-0.webp",
+    "exercise-media/hanging-leg-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "ab-wheel",
+  "name": "Ab wheel rollout",
+  "aka": [
+   "Rollout"
+  ],
+  "pattern": "core-anti-extension",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "lats",
+   "obliques"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 3,
+  "purpose": "A tough core exercise: rolling out and back makes your stomach fight to keep your back from sagging.",
+  "cue": "Tuck your bum, roll out slowly, pull back with your stomach.",
+  "setup": [
+   "Kneel on a mat holding an ab wheel (or a barbell with round plates) under your shoulders."
+  ],
+  "execution": [
+   "Tighten your stomach and tuck your hips slightly.",
+   "Roll forward as far as you can without your lower back sagging.",
+   "Pull back to the start using your stomach."
+  ],
+  "breathing": "Breathe in as you roll out, out as you come back.",
+  "feelItIn": "Your whole stomach.",
+  "commonMistakes": [
+   "Lower back sagging",
+   "Rolling out too far too soon",
+   "Pushing the hips back to return"
+  ],
+  "regressionId": "plank",
+  "substitutes": [
+   "plank",
+   "dead-bug"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Ab_Roller",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Ab+wheel+rollout+proper+form",
+   "images": [
+    "exercise-media/ab-wheel-0.webp",
+    "exercise-media/ab-wheel-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "cable-crunch",
+  "name": "Cable crunch",
+  "pattern": "core-flexion",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 3,
+  "purpose": "A crunch with cable weight, so your stomach muscles can get stronger over time.",
+  "cue": "Curl your ribs toward your hips; the hips stay still.",
+  "setup": [
+   "Attach a rope to a high cable. Kneel facing the machine holding the rope beside your head."
+  ],
+  "execution": [
+   "Curl your chest down toward your knees by rounding your spine.",
+   "Squeeze your stomach, then return slowly."
+  ],
+  "breathing": "Breathe out as you crunch, in as you return.",
+  "feelItIn": "The front of your stomach.",
+  "commonMistakes": [
+   "Pulling with the arms",
+   "Sitting the hips back instead of curling"
+  ],
+  "regressionId": "dead-bug",
+  "substitutes": [
+   "hanging-knee-raise",
+   "ab-wheel"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "startLb": 40,
+  "media": {
+   "datasetId": "Cable_Crunch",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Cable+crunch+proper+form",
+   "images": [
+    "exercise-media/cable-crunch-0.webp",
+    "exercise-media/cable-crunch-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "incline-bench-press",
+  "name": "Incline barbell bench press",
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest",
+   "front-delts"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "equipment": [
+   "barbell",
+   "bench",
+   "rack"
+  ],
+  "level": 4,
+  "purpose": "Builds the upper chest and front shoulders with a barbell, so you can load it heavier than dumbbells.",
+  "cue": "Low incline, bar to upper chest, shoulder blades pinned.",
+  "setup": [
+   "Set an incline bench (about 30°) in a rack, or use an incline bench station. Set the safeties.",
+   "Lie back with your eyes under the bar, grip a little wider than shoulder-width."
+  ],
+  "execution": [
+   "Unrack, lower the bar to your upper chest under control.",
+   "Press it back up over your shoulders."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "Your upper chest and shoulders.",
+  "commonMistakes": [
+   "Bouncing the bar",
+   "Bench too steep",
+   "Elbows flared"
+  ],
+  "safety": "Use safety arms or a spotter.",
+  "regressionId": "incline-dumbbell-press",
+  "substitutes": [
+   "incline-dumbbell-press",
+   "chest-press-machine"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Incline+barbell+bench+press+proper+form",
+   "images": [
+    "exercise-media/incline-bench-press-0.webp",
+    "exercise-media/incline-bench-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "bulgarian-split-squat",
+  "name": "Bulgarian split squat",
+  "aka": [
+   "Rear-foot-elevated split squat"
+  ],
+  "pattern": "lunge",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "hamstrings"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 4,
+  "purpose": "A split squat with the back foot up on a bench: hard, but one of the best builders for legs and glutes.",
+  "cue": "Back foot on the bench, drop straight down, front foot flat.",
+  "setup": [
+   "Stand about two steps in front of a bench, facing away from it.",
+   "Put the top of one foot on the bench behind you. Hold dumbbells by your sides (or nothing to start)."
+  ],
+  "execution": [
+   "Lower your back knee toward the floor, keeping your front foot flat.",
+   "Go down until your front thigh is about level with the floor.",
+   "Push through your front foot to stand up. Do all reps, then switch legs."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front leg's thigh and glute; a stretch in the back leg's hip.",
+  "commonMistakes": [
+   "Front foot too close to the bench",
+   "Front heel lifting",
+   "Bouncing on the back knee"
+  ],
+  "regressionId": "split-squat",
+  "substitutes": [
+   "split-squat",
+   "reverse-lunge",
+   "leg-press"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 10,
+  "media": {
+   "animation": "svg",
+   "stick": {
+    "start": {
+     "torso": 175,
+     "upperArm": 0,
+     "forearm": 0,
+     "thigh": 8,
+     "shin": -4,
+     "thigh2": -28,
+     "shin2": -95,
+     "hipX": 0.5,
+     "hipY": 0.42
+    },
+    "end": {
+     "torso": 165,
+     "upperArm": -5,
+     "forearm": -5,
+     "thigh": 78,
+     "shin": -8,
+     "thigh2": -5,
+     "shin2": -80,
+     "hipX": 0.46,
+     "hipY": 0.6
+    },
+    "props": [
+     "bench",
+     "dumbbell",
+     "floor"
+    ]
+   },
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Bulgarian+split+squat+proper+form"
+  }
+ },
+ {
+  "id": "hip-thrust",
+  "name": "Barbell hip thrust",
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "quads"
+  ],
+  "equipment": [
+   "barbell",
+   "bench"
+  ],
+  "level": 4,
+  "purpose": "The most direct glute builder: strong glutes power your squats, deadlifts and cycling.",
+  "cue": "Chin tucked, ribs down, drive your hips up and squeeze hard.",
+  "setup": [
+   "Sit on the floor with your upper back against a bench, a padded barbell across your hips.",
+   "Bend your knees so your feet are flat, about hip-width apart."
+  ],
+  "execution": [
+   "Drive through your heels to lift your hips until your body is flat from shoulders to knees.",
+   "Squeeze your glutes hard for a second at the top.",
+   "Lower your hips under control."
+  ],
+  "breathing": "Breathe in at the bottom, out as you push up.",
+  "feelItIn": "Your glutes, strongly.",
+  "commonMistakes": [
+   "Arching the lower back at the top",
+   "Feet too far away (hamstrings take over)",
+   "Pushing through the toes"
+  ],
+  "safety": "Use a bar pad or a folded mat. Start with just the bar.",
+  "regressionId": "glute-bridge",
+  "substitutes": [
+   "glute-bridge",
+   "back-extension",
+   "barbell-rdl"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "media": {
+   "datasetId": "Barbell_Hip_Thrust",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Barbell+hip+thrust+proper+form",
+   "images": [
+    "exercise-media/hip-thrust-0.webp",
+    "exercise-media/hip-thrust-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "lateral-raise",
+  "name": "Dumbbell lateral raise",
+  "aka": [
+   "Side raise"
+  ],
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "side-delts"
+  ],
+  "secondaryMuscles": [
+   "upper-back"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 4,
+  "purpose": "Builds the side of your shoulders, which makes your shoulders look broader.",
+  "cue": "Lead with the elbows, lift out to shoulder height, light weight.",
+  "setup": [
+   "Stand tall holding light dumbbells by your sides, palms facing in."
+  ],
+  "execution": [
+   "Raise your arms out to the sides with a slight bend in the elbows, until they're level with your shoulders.",
+   "Pause, then lower slowly."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "The outside of your shoulders.",
+  "commonMistakes": [
+   "Swinging the weights up",
+   "Shrugging toward the ears",
+   "Lifting higher than the shoulders"
+  ],
+  "substitutes": [
+   "cable-lateral-raise"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 10,
+  "media": {
+   "datasetId": "Side_Lateral_Raise",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dumbbell+lateral+raise+proper+form",
+   "images": [
+    "exercise-media/lateral-raise-0.webp",
+    "exercise-media/lateral-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "cable-lateral-raise",
+  "name": "Cable lateral raise",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "side-delts"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "cable"
+  ],
+  "level": 4,
+  "purpose": "A lateral raise with a cable, which keeps tension on the shoulder through the whole movement.",
+  "cue": "Pull out and up in a wide arc to shoulder height.",
+  "setup": [
+   "Set a handle at the bottom of a cable. Stand side-on and hold it with the hand farther from the machine."
+  ],
+  "execution": [
+   "Raise the handle out to the side until your arm is level with your shoulder.",
+   "Lower slowly. Do all reps, then switch sides."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "The outside of your shoulder.",
+  "commonMistakes": [
+   "Leaning away to cheat",
+   "Going too heavy"
+  ],
+  "substitutes": [
+   "lateral-raise"
+  ],
+  "loadType": "stack",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 5,
+  "media": {
+   "datasetId": "Cable_Seated_Lateral_Raise",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Cable+lateral+raise+proper+form",
+   "images": [
+    "exercise-media/cable-lateral-raise-0.webp",
+    "exercise-media/cable-lateral-raise-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "hammer-curl",
+  "name": "Hammer curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "biceps",
+   "forearms"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 4,
+  "purpose": "A curl with palms facing each other: builds the biceps plus the forearm muscle that makes arms look thicker.",
+  "cue": "Thumbs up, elbows still, curl and lower slowly.",
+  "setup": [
+   "Stand tall with dumbbells by your sides, palms facing your legs."
+  ],
+  "execution": [
+   "Curl the dumbbells up keeping your thumbs pointing up.",
+   "Lower slowly to straight arms."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The front of your upper arm and the top of your forearm.",
+  "commonMistakes": [
+   "Swinging",
+   "Elbows moving forward"
+  ],
+  "substitutes": [
+   "dumbbell-curl",
+   "barbell-curl"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 15,
+  "media": {
+   "datasetId": "Hammer_Curls",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Hammer+curl+proper+form",
+   "images": [
+    "exercise-media/hammer-curl-0.webp",
+    "exercise-media/hammer-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "overhead-triceps-extension",
+  "name": "Overhead cable triceps extension",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "cable"
+  ],
+  "level": 4,
+  "purpose": "Works the long part of the triceps with a big stretch; great for arm size.",
+  "cue": "Elbows pointing forward, straighten your arms overhead.",
+  "setup": [
+   "Attach a rope to a cable at about chest height. Face away from the machine, holding the rope behind your head.",
+   "Step forward into a split stance and lean slightly forward, elbows by your head."
+  ],
+  "execution": [
+   "Straighten your arms forward and up until they're fully extended.",
+   "Bend your elbows slowly to bring the rope back behind your head."
+  ],
+  "breathing": "Breathe out as you extend, in as you return.",
+  "feelItIn": "The back of your upper arms, with a stretch near the armpit.",
+  "commonMistakes": [
+   "Elbows flaring wide",
+   "Moving the shoulders instead of the elbows"
+  ],
+  "regressionId": "triceps-pushdown",
+  "substitutes": [
+   "skull-crusher",
+   "triceps-pushdown"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 25,
+  "media": {
+   "datasetId": "Cable_Rope_Overhead_Triceps_Extension",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Overhead+cable+triceps+extension+proper+form",
+   "images": [
+    "exercise-media/overhead-triceps-extension-0.webp",
+    "exercise-media/overhead-triceps-extension-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "dip",
+  "name": "Dip",
+  "aka": [
+   "Parallel bar dip",
+   "Weighted dip"
+  ],
+  "pattern": "vertical-push",
+  "primaryMuscles": [
+   "triceps",
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 4,
+  "purpose": "Lowering and pushing your body up between parallel bars: builds chest, triceps and shoulders.",
+  "cue": "Lean slightly forward, lower to shoulder level with elbows, push up.",
+  "setup": [
+   "Grab the parallel bars and jump or step up to straight arms.",
+   "Lean slightly forward, knees bent."
+  ],
+  "execution": [
+   "Lower yourself by bending your elbows until your shoulders are about level with your elbows.",
+   "Push back up to straight arms.",
+   "When all sets reach the top of the range, add weight with a dip belt."
+  ],
+  "breathing": "Breathe in as you lower, out as you push up.",
+  "feelItIn": "The back of your arms and the lower chest.",
+  "commonMistakes": [
+   "Going so deep the shoulders hurt",
+   "Shrugging up at the top",
+   "Swinging"
+  ],
+  "safety": "If dips hurt your shoulders, stop and use the assisted version or push-ups instead.",
+  "regressionId": "assisted-dip",
+  "substitutes": [
+   "assisted-dip",
+   "push-up",
+   "close-grip-bench-press"
+  ],
+  "loadType": "bodyweight",
+  "canAddWeight": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "media": {
+   "datasetId": "Dips_-_Triceps_Version",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Dip+proper+form",
+   "images": [
+    "exercise-media/dip-0.webp",
+    "exercise-media/dip-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "assisted-dip",
+  "name": "Assisted dip machine",
+  "pattern": "vertical-push",
+  "primaryMuscles": [
+   "triceps",
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 4,
+  "purpose": "A dip with help from a machine so you can build up to bodyweight dips.",
+  "cue": "Chest up, lower until your elbows are at 90°, push up.",
+  "setup": [
+   "Choose the amount of help (more weight = more help). Kneel or stand on the pad and grab the dip handles."
+  ],
+  "execution": [
+   "Lower yourself until your elbows are bent about 90°.",
+   "Push back up to straight arms."
+  ],
+  "breathing": "Breathe in as you lower, out as you push.",
+  "feelItIn": "The back of your arms and the chest.",
+  "commonMistakes": [
+   "Going too deep",
+   "Shrugging"
+  ],
+  "safety": "On the machine, the number is help, so a lower number means you're stronger.",
+  "progressionId": "dip",
+  "substitutes": [
+   "dip",
+   "push-up",
+   "triceps-pushdown"
+  ],
+  "loadType": "assisted",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "media": {
+   "datasetId": "Dip_Machine",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Assisted+dip+machine+proper+form",
+   "images": [
+    "exercise-media/assisted-dip-0.webp",
+    "exercise-media/assisted-dip-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "leg-extension",
+  "name": "Leg extension",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "quads"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "machine"
+  ],
+  "level": 4,
+  "purpose": "Isolates the front of your thighs; good extra quad work with no back load.",
+  "cue": "Kick up until your legs are straight, squeeze, lower slowly.",
+  "setup": [
+   "Adjust the seat so your knees line up with the machine's pivot and the pad sits on your lower shins."
+  ],
+  "execution": [
+   "Straighten your legs until they're fully extended.",
+   "Squeeze for a second, then lower slowly."
+  ],
+  "breathing": "Breathe out as you extend, in as you lower.",
+  "feelItIn": "The front of your thighs.",
+  "commonMistakes": [
+   "Swinging the weight up",
+   "Bum lifting off the seat"
+  ],
+  "substitutes": [
+   "leg-press",
+   "split-squat"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 40,
+  "media": {
+   "datasetId": "Leg_Extensions",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Leg+extension+proper+form",
+   "images": [
+    "exercise-media/leg-extension-0.webp",
+    "exercise-media/leg-extension-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "hack-squat",
+  "name": "Hack squat machine",
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 4,
+  "purpose": "A machine squat on an angled sled: lets you train your legs hard with your back supported.",
+  "cue": "Back flat on the pad, sit deep, drive up through your whole foot.",
+  "setup": [
+   "Stand on the platform with your back against the pad and shoulders under the pads.",
+   "Feet shoulder-width in the middle of the platform. Release the safety handles."
+  ],
+  "execution": [
+   "Lower by bending your knees until your thighs are about level with the platform or lower.",
+   "Push back up until your legs are nearly straight."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front of your thighs and glutes.",
+  "commonMistakes": [
+   "Heels lifting",
+   "Locking the knees hard",
+   "Only doing half reps"
+  ],
+  "safety": "Re-engage the safety handles before stepping out.",
+  "regressionId": "leg-press",
+  "progressionId": "barbell-back-squat",
+  "substitutes": [
+   "leg-press",
+   "smith-squat",
+   "goblet-squat"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 120,
+  "startLb": 45,
+  "media": {
+   "datasetId": "Hack_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Hack+squat+machine+proper+form",
+   "images": [
+    "exercise-media/hack-squat-0.webp",
+    "exercise-media/hack-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "walking-lunge",
+  "name": "Walking lunge",
+  "pattern": "lunge",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "hamstrings",
+   "calves"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 4,
+  "purpose": "Lunging forward step after step: builds legs, glutes and balance.",
+  "cue": "Long step, drop the back knee, push through the front heel.",
+  "setup": [
+   "Stand tall with dumbbells by your sides (or none) with space to walk."
+  ],
+  "execution": [
+   "Take a long step forward and lower your back knee toward the floor.",
+   "Push through your front foot and bring the back leg through into the next step.",
+   "Each leg counts as one rep."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The thighs and glutes.",
+  "commonMistakes": [
+   "Steps too short",
+   "Front knee caving in",
+   "Leaning forward"
+  ],
+  "regressionId": "reverse-lunge",
+  "substitutes": [
+   "reverse-lunge",
+   "split-squat",
+   "bulgarian-split-squat"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 15,
+  "media": {
+   "datasetId": "Dumbbell_Lunges",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Walking+lunge+proper+form",
+   "images": [
+    "exercise-media/walking-lunge-0.webp",
+    "exercise-media/walking-lunge-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "reverse-lunge",
+  "name": "Reverse lunge",
+  "pattern": "lunge",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors",
+   "hamstrings"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 4,
+  "purpose": "A lunge stepping backward: friendlier on the knees than a forward lunge.",
+  "cue": "Step back, drop the back knee, push through the front foot.",
+  "setup": [
+   "Stand tall with dumbbells by your sides (or none)."
+  ],
+  "execution": [
+   "Step one foot back and lower your back knee toward the floor.",
+   "Push through your front foot to return to standing. Alternate legs or do one side at a time."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front leg's thigh and glute.",
+  "commonMistakes": [
+   "Front heel lifting",
+   "Wobbling: slow down"
+  ],
+  "regressionId": "split-squat",
+  "progressionId": "walking-lunge",
+  "substitutes": [
+   "split-squat",
+   "walking-lunge",
+   "bulgarian-split-squat"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "startLb": 10,
+  "media": {
+   "datasetId": "Dumbbell_Rear_Lunge",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Reverse+lunge+proper+form",
+   "images": [
+    "exercise-media/reverse-lunge-0.webp",
+    "exercise-media/reverse-lunge-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "pec-deck",
+  "name": "Pec deck",
+  "aka": [
+   "Machine fly"
+  ],
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 4,
+  "purpose": "A machine chest fly that works the chest without the triceps.",
+  "cue": "Hug a big tree, squeeze your chest, return slowly.",
+  "setup": [
+   "Adjust the seat so the handles are at chest height. Sit tall with your back on the pad."
+  ],
+  "execution": [
+   "Bring the handles together in front of your chest in a wide arc.",
+   "Squeeze, then open slowly until you feel a chest stretch."
+  ],
+  "breathing": "Breathe out as you squeeze, in as you open.",
+  "feelItIn": "Across your chest.",
+  "commonMistakes": [
+   "Letting the arms go too far back",
+   "Shoulders rolling forward"
+  ],
+  "substitutes": [
+   "cable-fly",
+   "chest-press-machine"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 50,
+  "media": {
+   "datasetId": "Butterfly",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Pec+deck+proper+form",
+   "images": [
+    "exercise-media/pec-deck-0.webp",
+    "exercise-media/pec-deck-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "cable-fly",
+  "name": "Cable fly",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 4,
+  "purpose": "Chest fly with cables, keeping constant tension; good for the upper chest when done low to high.",
+  "cue": "Slight bend in the elbows, sweep your hands together.",
+  "setup": [
+   "Set both cable handles at shoulder height (or low for an upper-chest focus). Stand in the middle with a handle in each hand, one foot forward."
+  ],
+  "execution": [
+   "With a slight bend in your elbows, bring your hands together in front of your chest.",
+   "Open slowly until you feel a chest stretch."
+  ],
+  "breathing": "Breathe out as you bring the hands together, in as you open.",
+  "feelItIn": "Across your chest.",
+  "commonMistakes": [
+   "Turning it into a press by bending the elbows a lot",
+   "Going too heavy"
+  ],
+  "substitutes": [
+   "pec-deck",
+   "incline-dumbbell-press"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 10,
+  "media": {
+   "datasetId": "Cable_Crossover",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Cable+fly+proper+form",
+   "images": [
+    "exercise-media/cable-fly-0.webp",
+    "exercise-media/cable-fly-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "push-up",
+  "name": "Push-up",
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest",
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "front-delts",
+   "abs"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 2,
+  "purpose": "The classic bodyweight press for chest, shoulders and arms. Works anywhere.",
+  "cue": "Body in a straight line, chest to the floor, push it away.",
+  "setup": [
+   "Put your hands on the floor a bit wider than your shoulders, legs straight behind you.",
+   "Squeeze your glutes and stomach so your body is a straight line."
+  ],
+  "execution": [
+   "Lower your chest toward the floor, elbows at about 45°.",
+   "Push back up to straight arms."
+  ],
+  "breathing": "Breathe in as you lower, out as you push.",
+  "feelItIn": "Your chest and the back of your arms.",
+  "commonMistakes": [
+   "Hips sagging",
+   "Elbows flared wide",
+   "Half reps"
+  ],
+  "regressionId": "incline-push-up",
+  "progressionId": "dip",
+  "substitutes": [
+   "chest-press-machine",
+   "dumbbell-bench-press"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Pushups",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Push-up+proper+form",
+   "images": [
+    "exercise-media/push-up-0.webp",
+    "exercise-media/push-up-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "incline-push-up",
+  "name": "Incline push-up",
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "chest",
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "bodyweight",
+   "bench"
+  ],
+  "level": 1,
+  "purpose": "A push-up with your hands on a bench or bar: easier, so you can learn good form.",
+  "cue": "Hands on the bench, straight body, chest to the edge.",
+  "setup": [
+   "Put your hands on a bench or a racked barbell, a bit wider than your shoulders. Walk your feet back until your body is straight."
+  ],
+  "execution": [
+   "Lower your chest to the bench.",
+   "Push back up. The lower the bench, the harder it gets."
+  ],
+  "breathing": "Breathe in as you lower, out as you push.",
+  "feelItIn": "Your chest and arms.",
+  "commonMistakes": [
+   "Hips sagging",
+   "Head poking forward"
+  ],
+  "progressionId": "push-up",
+  "substitutes": [
+   "push-up",
+   "chest-press-machine"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Incline_Push-Up",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Incline+push-up+proper+form",
+   "images": [
+    "exercise-media/incline-push-up-0.webp",
+    "exercise-media/incline-push-up-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "close-grip-bench-press",
+  "name": "Close-grip bench press",
+  "pattern": "horizontal-push",
+  "primaryMuscles": [
+   "triceps",
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "front-delts"
+  ],
+  "equipment": [
+   "barbell",
+   "bench",
+   "rack"
+  ],
+  "level": 5,
+  "purpose": "A bench press with hands closer together: builds triceps and helps your regular bench.",
+  "cue": "Hands shoulder-width, elbows tucked, bar to lower chest.",
+  "setup": [
+   "Set up like a normal bench press (safeties set!), but grip the bar about shoulder-width."
+  ],
+  "execution": [
+   "Lower the bar to your lower chest with elbows close to your sides.",
+   "Press back up."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The back of your arms and your chest.",
+  "commonMistakes": [
+   "Hands too close (wrist strain)",
+   "Elbows flaring"
+  ],
+  "safety": "Use safety arms or a spotter.",
+  "regressionId": "dumbbell-bench-press",
+  "substitutes": [
+   "dip",
+   "skull-crusher",
+   "dumbbell-bench-press"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Close-Grip_Barbell_Bench_Press",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Close-grip+bench+press+proper+form",
+   "images": [
+    "exercise-media/close-grip-bench-press-0.webp",
+    "exercise-media/close-grip-bench-press-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "skull-crusher",
+  "name": "Skull crusher (EZ bar)",
+  "aka": [
+   "Lying triceps extension"
+  ],
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [],
+  "equipment": [
+   "barbell",
+   "bench"
+  ],
+  "level": 4,
+  "purpose": "A lying triceps exercise that builds arm size; the name sounds worse than it is.",
+  "cue": "Upper arms still, lower the bar to your forehead, extend.",
+  "setup": [
+   "Lie on a flat bench holding an EZ-bar (or dumbbells) above your chest with arms straight."
+  ],
+  "execution": [
+   "Bend your elbows to lower the bar toward your forehead, keeping your upper arms still.",
+   "Straighten your arms back up."
+  ],
+  "breathing": "Breathe in as you lower, out as you extend.",
+  "feelItIn": "The back of your upper arms.",
+  "commonMistakes": [
+   "Elbows flaring out",
+   "Upper arms swinging",
+   "Going too heavy"
+  ],
+  "safety": "Start light and move slowly. Lowering slightly behind your head is easier on the elbows.",
+  "regressionId": "triceps-pushdown",
+  "substitutes": [
+   "overhead-triceps-extension",
+   "triceps-pushdown"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "barLb": 25,
+  "media": {
+   "datasetId": "EZ-Bar_Skullcrusher",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Skull+crusher+%28EZ+bar%29+proper+form",
+   "images": [
+    "exercise-media/skull-crusher-0.webp",
+    "exercise-media/skull-crusher-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "incline-dumbbell-curl",
+  "name": "Incline dumbbell curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "equipment": [
+   "dumbbell",
+   "bench"
+  ],
+  "level": 5,
+  "purpose": "A curl on an incline bench that stretches the biceps for extra growth.",
+  "cue": "Arms hanging back, curl without moving your elbows.",
+  "setup": [
+   "Set a bench to about 45° and sit back with a dumbbell in each hand, arms hanging straight down."
+  ],
+  "execution": [
+   "Curl the dumbbells up, keeping your upper arms still.",
+   "Lower slowly to a full stretch."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The front of your upper arms, with a big stretch at the bottom.",
+  "commonMistakes": [
+   "Lifting the shoulders off the bench",
+   "Swinging"
+  ],
+  "regressionId": "dumbbell-curl",
+  "substitutes": [
+   "dumbbell-curl",
+   "hammer-curl"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 10,
+  "media": {
+   "datasetId": "Incline_Dumbbell_Curl",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Incline+dumbbell+curl+proper+form",
+   "images": [
+    "exercise-media/incline-dumbbell-curl-0.webp",
+    "exercise-media/incline-dumbbell-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "glute-bridge",
+  "name": "Glute bridge",
+  "pattern": "hinge",
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 1,
+  "purpose": "A beginner-friendly glute exercise lying on the floor; teaches you to use your glutes.",
+  "cue": "Heels down, push your hips up, squeeze.",
+  "setup": [
+   "Lie on your back with knees bent and feet flat, hip-width apart."
+  ],
+  "execution": [
+   "Push through your heels and lift your hips until your body is straight from shoulders to knees.",
+   "Squeeze your glutes for two seconds, then lower."
+  ],
+  "breathing": "Breathe out as you lift, in as you lower.",
+  "feelItIn": "Your glutes.",
+  "commonMistakes": [
+   "Arching the lower back",
+   "Pushing through the toes"
+  ],
+  "progressionId": "hip-thrust",
+  "substitutes": [
+   "hip-thrust",
+   "back-extension"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "datasetId": "Butt_Lift_Bridge",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Glute+bridge+proper+form",
+   "images": [
+    "exercise-media/glute-bridge-0.webp",
+    "exercise-media/glute-bridge-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "straight-arm-pulldown",
+  "name": "Straight-arm pulldown",
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "abs"
+  ],
+  "equipment": [
+   "cable"
+  ],
+  "level": 2,
+  "purpose": "Isolates your lats with straight arms; great for learning to feel your back working.",
+  "cue": "Arms long, sweep the bar down to your thighs.",
+  "setup": [
+   "Attach a straight bar to a high cable. Stand facing it, step back and hinge forward slightly, arms straight and up."
+  ],
+  "execution": [
+   "Keeping your arms straight, pull the bar down in an arc to your thighs.",
+   "Return slowly until your arms are overhead."
+  ],
+  "breathing": "Breathe out as you pull down, in as you return.",
+  "feelItIn": "Under your armpits and down the sides of your back.",
+  "commonMistakes": [
+   "Bending the elbows",
+   "Rocking the body"
+  ],
+  "substitutes": [
+   "lat-pulldown"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "media": {
+   "datasetId": "Straight-Arm_Pulldown",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Straight-arm+pulldown+proper+form",
+   "images": [
+    "exercise-media/straight-arm-pulldown-0.webp",
+    "exercise-media/straight-arm-pulldown-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "bodyweight-squat",
+  "name": "Bodyweight box squat",
+  "aka": [
+   "Box squat",
+   "Air squat"
+  ],
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors"
+  ],
+  "equipment": [
+   "bodyweight",
+   "bench"
+  ],
+  "level": 1,
+  "purpose": "Squatting down to a bench with no weight: the very first step to learning a squat.",
+  "cue": "Arms forward for balance, sit back to touch the bench, stand up.",
+  "setup": [
+   "Stand in front of a bench, feet shoulder-width, toes slightly out.",
+   "Reach your arms forward for balance."
+  ],
+  "execution": [
+   "Sit back and down until your bum lightly touches the bench.",
+   "Stand back up, pushing through your whole foot."
+  ],
+  "breathing": "Breathe in as you lower the weight, breathe out as you push or pull it.",
+  "feelItIn": "The front of your thighs and your glutes.",
+  "commonMistakes": [
+   "Plopping down onto the bench",
+   "Knees caving in",
+   "Heels lifting"
+  ],
+  "progressionId": "goblet-squat",
+  "substitutes": [
+   "goblet-squat",
+   "leg-press"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Bodyweight_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Bodyweight+box+squat+proper+form",
+   "images": [
+    "exercise-media/bodyweight-squat-0.webp",
+    "exercise-media/bodyweight-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "inverted-row",
+  "name": "Inverted row",
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "upper-back",
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "rear-delts",
+   "abs"
+  ],
+  "equipment": [
+   "bodyweight",
+   "rack"
+  ],
+  "level": 2,
+  "purpose": "Rowing your body up to a low bar: a bodyweight back exercise that builds toward pull-ups.",
+  "cue": "Body straight like a plank, pull your chest to the bar.",
+  "setup": [
+   "Set a bar in a rack at about waist height. Lie under it and grab it a bit wider than shoulder-width.",
+   "Straighten your body with heels on the floor."
+  ],
+  "execution": [
+   "Pull your chest to the bar, squeezing your shoulder blades.",
+   "Lower slowly to straight arms. Bend your knees to make it easier."
+  ],
+  "breathing": "Breathe out as you pull, in as you lower.",
+  "feelItIn": "Your upper back.",
+  "commonMistakes": [
+   "Hips sagging",
+   "Chin poking to the bar"
+  ],
+  "progressionId": "barbell-row",
+  "substitutes": [
+   "seated-cable-row",
+   "chest-supported-row"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "media": {
+   "datasetId": "Inverted_Row",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Inverted+row+proper+form",
+   "images": [
+    "exercise-media/inverted-row-0.webp",
+    "exercise-media/inverted-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "front-squat",
+  "name": "Front squat",
+  "pattern": "squat",
+  "primaryMuscles": [
+   "quads",
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "abs",
+   "upper-back",
+   "adductors"
+  ],
+  "equipment": [
+   "barbell",
+   "rack"
+  ],
+  "level": 5,
+  "purpose": "A squat with the bar on the front of your shoulders: very upright and great for the quads and core.",
+  "cue": "Elbows high, chest tall, sit straight down.",
+  "setup": [
+   "Set the bar in the rack at shoulder height with the safeties below your bottom position.",
+   "Step in so the bar rests on the front of your shoulders. Fingertips under the bar, elbows high."
+  ],
+  "execution": [
+   "Brace and sit straight down between your heels, keeping your elbows high.",
+   "Go as deep as you can with a flat back, then drive up."
+  ],
+  "breathing": "Take a deep breath into your belly and tighten your stomach as if bracing for a poke, then hold it through the hard part of the rep. Breathe out at the top.",
+  "feelItIn": "The front of your thighs, and your upper back holding the bar.",
+  "commonMistakes": [
+   "Elbows dropping so the bar rolls forward",
+   "Heels lifting",
+   "Rounding the upper back"
+  ],
+  "safety": "Squat inside the rack with the safety pins set. To bail, push the bar forward and step back.",
+  "regressionId": "goblet-squat",
+  "substitutes": [
+   "goblet-squat",
+   "barbell-back-squat",
+   "hack-squat"
+  ],
+  "loadType": "barbell-total",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 120,
+  "media": {
+   "datasetId": "Front_Barbell_Squat",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Front+squat+proper+form",
+   "images": [
+    "exercise-media/front-squat-0.webp",
+    "exercise-media/front-squat-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "lying-leg-curl",
+  "name": "Lying leg curl",
+  "pattern": "isolation",
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 2,
+  "purpose": "Strengthens the back of your thighs while lying face down.",
+  "cue": "Hips pressed into the pad, curl your heels to your bum.",
+  "setup": [
+   "Lie face down with your knees just off the end of the pad and the roller above your heels."
+  ],
+  "execution": [
+   "Curl your heels toward your bum.",
+   "Lower slowly until your legs are nearly straight."
+  ],
+  "breathing": "Breathe out as you curl, in as you lower.",
+  "feelItIn": "The back of your thighs.",
+  "commonMistakes": [
+   "Hips lifting off the pad",
+   "Jerking the weight"
+  ],
+  "substitutes": [
+   "seated-leg-curl",
+   "dumbbell-rdl"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 60,
+  "startLb": 40,
+  "media": {
+   "datasetId": "Lying_Leg_Curls",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Lying+leg+curl+proper+form",
+   "images": [
+    "exercise-media/lying-leg-curl-0.webp",
+    "exercise-media/lying-leg-curl-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "machine-row",
+  "name": "Machine row",
+  "aka": [
+   "Seated row machine"
+  ],
+  "pattern": "horizontal-pull",
+  "primaryMuscles": [
+   "upper-back",
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "rear-delts"
+  ],
+  "equipment": [
+   "machine"
+  ],
+  "level": 1,
+  "purpose": "A chest-supported rowing machine: easy to learn and easy on the lower back.",
+  "cue": "Chest on the pad, pull your elbows back, squeeze.",
+  "setup": [
+   "Adjust the seat so the handles are at chest height and your chest rests on the pad."
+  ],
+  "execution": [
+   "Pull the handles back, driving your elbows behind you.",
+   "Squeeze your shoulder blades, then return slowly."
+  ],
+  "breathing": "Breathe out as you pull, in as you return.",
+  "feelItIn": "Your upper back.",
+  "commonMistakes": [
+   "Lifting off the chest pad",
+   "Shrugging"
+  ],
+  "substitutes": [
+   "seated-cable-row",
+   "chest-supported-row"
+  ],
+  "loadType": "stack",
+  "defaultIncrementLb": 10,
+  "defaultRestSec": 90,
+  "startLb": 60,
+  "media": {
+   "datasetId": "Leverage_Iso_Row",
+   "animation": "crossfade",
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Machine+row+proper+form",
+   "images": [
+    "exercise-media/machine-row-0.webp",
+    "exercise-media/machine-row-1.webp"
+   ],
+   "credit": "Photo: free-exercise-db (yuhonas), public domain (Unlicense)"
+  }
+ },
+ {
+  "id": "bird-dog",
+  "name": "Bird dog",
+  "pattern": "core-anti-extension",
+  "primaryMuscles": [
+   "abs",
+   "lower-back"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "obliques"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 1,
+  "purpose": "A gentle core and back exercise on hands and knees; teaches you to keep your spine still.",
+  "cue": "Reach long, opposite arm and leg, hips stay level.",
+  "setup": [
+   "Get on your hands and knees, hands under shoulders and knees under hips. Back flat."
+  ],
+  "execution": [
+   "Slowly reach one arm forward and the opposite leg back until both are level with your body.",
+   "Hold for two seconds without letting your hips tilt.",
+   "Return and switch sides. Each side counts as one rep."
+  ],
+  "breathing": "Breathe out as you reach, in as you return.",
+  "feelItIn": "Your stomach, lower back and glutes, gently.",
+  "commonMistakes": [
+   "Arching the lower back",
+   "Hips rotating",
+   "Rushing"
+  ],
+  "progressionId": "dead-bug",
+  "substitutes": [
+   "dead-bug",
+   "plank"
+  ],
+  "loadType": "bodyweight",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "animation": "svg",
+   "stick": {
+    "start": {
+     "torso": 98,
+     "upperArm": 0,
+     "forearm": 0,
+     "upperArm2": 0,
+     "forearm2": 0,
+     "thigh": 0,
+     "shin": -90,
+     "thigh2": 0,
+     "shin2": -90,
+     "hipX": 0.36,
+     "hipY": 0.6
+    },
+    "end": {
+     "torso": 98,
+     "upperArm": 0,
+     "forearm": 0,
+     "upperArm2": 170,
+     "forearm2": 170,
+     "thigh": 0,
+     "shin": -90,
+     "thigh2": -90,
+     "shin2": -90,
+     "hipX": 0.36,
+     "hipY": 0.6
+    },
+    "props": [
+     "floor"
+    ]
+   },
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Bird+dog+proper+form"
+  }
+ },
+ {
+  "id": "suitcase-carry",
+  "name": "Suitcase carry",
+  "pattern": "carry",
+  "primaryMuscles": [
+   "obliques",
+   "forearms"
+  ],
+  "secondaryMuscles": [
+   "abs",
+   "upper-back",
+   "glutes"
+  ],
+  "equipment": [
+   "dumbbell"
+  ],
+  "level": 2,
+  "purpose": "Carrying one heavy dumbbell on one side: your core has to work hard to keep you upright.",
+  "cue": "Stand perfectly tall; don't lean toward or away from the weight.",
+  "setup": [
+   "Put a heavy dumbbell beside one foot. Squat down, grab it and stand tall."
+  ],
+  "execution": [
+   "Walk with short steady steps, staying perfectly upright.",
+   "Walk for the target time, then switch hands."
+  ],
+  "breathing": "Breathe steadily.",
+  "feelItIn": "The side of your waist opposite the weight, and your grip.",
+  "commonMistakes": [
+   "Leaning to one side",
+   "Shrugging the loaded shoulder"
+  ],
+  "regressionId": "farmer-carry",
+  "substitutes": [
+   "farmer-carry",
+   "side-plank"
+  ],
+  "loadType": "dumbbell-per-hand",
+  "measure": "seconds",
+  "perSide": true,
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 60,
+  "startLb": 30,
+  "media": {
+   "animation": "svg",
+   "stick": {
+    "start": {
+     "torso": 180,
+     "upperArm": 0,
+     "forearm": 0,
+     "thigh": 18,
+     "shin": -5,
+     "thigh2": -14,
+     "shin2": -20,
+     "hipX": 0.5,
+     "hipY": 0.48
+    },
+    "end": {
+     "torso": 180,
+     "upperArm": 0,
+     "forearm": 0,
+     "thigh": -14,
+     "shin": -20,
+     "thigh2": 18,
+     "shin2": -5,
+     "hipX": 0.5,
+     "hipY": 0.48
+    },
+    "props": [
+     "dumbbell",
+     "floor"
+    ]
+   },
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Suitcase+carry+proper+form"
+  }
+ },
+ {
+  "id": "negative-pull-up",
+  "name": "Negative pull-up",
+  "pattern": "vertical-pull",
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "upper-back"
+  ],
+  "equipment": [
+   "pullup-bar",
+   "bodyweight"
+  ],
+  "level": 2,
+  "purpose": "Jump or step up to the top of a pull-up and lower yourself as slowly as you can. Builds pull-up strength fast.",
+  "cue": "Start at the top, take 3–5 seconds to lower all the way.",
+  "setup": [
+   "Stand on a box or bench under a pull-up bar. Grab the bar a bit wider than your shoulders."
+  ],
+  "execution": [
+   "Jump or step up so your chin is over the bar.",
+   "Lower yourself slowly, taking 3–5 seconds, until your arms are straight.",
+   "Step back up and repeat."
+  ],
+  "breathing": "Breathe steadily as you lower.",
+  "feelItIn": "The sides of your back and your biceps.",
+  "commonMistakes": [
+   "Dropping fast",
+   "Not reaching straight arms at the bottom"
+  ],
+  "regressionId": "assisted-pull-up",
+  "progressionId": "pull-up",
+  "substitutes": [
+   "assisted-pull-up",
+   "lat-pulldown"
+  ],
+  "loadType": "bodyweight",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 90,
+  "media": {
+   "animation": "svg",
+   "stick": {
+    "start": {
+     "torso": 180,
+     "upperArm": 150,
+     "forearm": -150,
+     "thigh": 10,
+     "shin": -30,
+     "hipX": 0.5,
+     "hipY": 0.62
+    },
+    "end": {
+     "torso": 180,
+     "upperArm": 180,
+     "forearm": 180,
+     "thigh": 10,
+     "shin": -30,
+     "hipX": 0.5,
+     "hipY": 0.82
+    },
+    "props": [
+     "bar-overhead"
+    ]
+   },
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Negative+pull-up+proper+form"
+  }
+ },
+ {
+  "id": "knee-plank",
+  "name": "Kneeling plank",
+  "pattern": "core-anti-extension",
+  "primaryMuscles": [
+   "abs"
+  ],
+  "secondaryMuscles": [
+   "obliques",
+   "glutes"
+  ],
+  "equipment": [
+   "bodyweight"
+  ],
+  "level": 1,
+  "purpose": "An easier plank on your knees: the first step to a full plank.",
+  "cue": "Straight line from head to knees, squeeze your glutes.",
+  "setup": [
+   "Lie face down, prop up on your forearms with elbows under shoulders.",
+   "Keep your knees on the floor."
+  ],
+  "execution": [
+   "Lift your hips so your body is straight from head to knees.",
+   "Hold, breathing slowly."
+  ],
+  "breathing": "Breathe slowly; don't hold your breath.",
+  "feelItIn": "Your stomach.",
+  "commonMistakes": [
+   "Bum sticking up",
+   "Hips sagging"
+  ],
+  "progressionId": "plank",
+  "substitutes": [
+   "plank",
+   "dead-bug"
+  ],
+  "loadType": "time",
+  "measure": "seconds",
+  "defaultIncrementLb": 5,
+  "defaultRestSec": 45,
+  "media": {
+   "animation": "svg",
+   "stick": {
+    "start": {
+     "torso": 100,
+     "upperArm": 0,
+     "forearm": 90,
+     "thigh": -35,
+     "shin": -90,
+     "hipX": 0.4,
+     "hipY": 0.68
+    },
+    "end": {
+     "torso": 97,
+     "upperArm": 0,
+     "forearm": 90,
+     "thigh": -38,
+     "shin": -90,
+     "hipX": 0.4,
+     "hipY": 0.665
+    },
+    "props": [
+     "floor"
+    ]
+   },
+   "videoSearchUrl": "https://www.youtube.com/results?search_query=Kneeling+plank+proper+form"
+  }
+ }
+]

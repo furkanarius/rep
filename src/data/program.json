@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "stages": [
+    {
+      "id": "s1",
+      "number": 1,
+      "name": "Foundation",
+      "purpose": "Learn the basic movements safely on machines, build the habit, and find your working weights.",
+      "summary": "Two alternating full-body workouts (A and B), mostly machines. The first 6 sessions use 2 sets so you can learn without getting wrecked.",
+      "weeksHint": "about weeks 1–8",
+      "whatsNew": [
+        "Two full-body workouts that alternate: A, B, A, B…",
+        "Machines guide the movement, so you can focus on feeling the right muscles",
+        "The first time you do any exercise, I'll help you find the right weight"
+      ],
+      "split": "full",
+      "introSessions": 6,
+      "introSets": 2,
+      "deloadEveryWeeks": 8,
+      "workouts": [
+        {
+          "id": "s1-a",
+          "name": "Workout A",
+          "shortName": "A",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 45,
+          "description": "Machine full-body day: legs, chest, back, hamstrings, shoulders and core.",
+          "slots": [
+            { "exerciseId": "leg-press", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "chest-press-machine", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "lat-pulldown", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "seated-leg-curl", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "shoulder-press-machine", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "plank", "role": "core", "sets": 2, "repMin": 20, "repMax": 45, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s1-b",
+          "name": "Workout B",
+          "shortName": "B",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 45,
+          "description": "Your first dumbbell day: squat, row, incline press, hip hinge, arms and core.",
+          "slots": [
+            { "exerciseId": "goblet-squat", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "seated-cable-row", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "incline-dumbbell-press", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "dumbbell-rdl", "role": "main", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "dumbbell-curl", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "triceps-pushdown", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "dead-bug", "role": "core", "sets": 2, "repMin": 6, "repMax": 10, "progression": "double" }
+          ]
+        }
+      ],
+      "gates": [
+        { "id": "s1-sessions", "type": "sessions", "min": 16 },
+        { "id": "s1-consistency", "type": "consistency", "minPerWeek": 2, "weeksRequired": 5, "windowWeeks": 6 },
+        { "id": "s1-legpress", "type": "lift", "exerciseId": "leg-press", "ratio": 1.5, "reps": 10, "accept": [{ "exerciseId": "hack-squat", "factor": 1.6 }] },
+        { "id": "s1-pulldown", "type": "lift", "exerciseId": "lat-pulldown", "ratio": 0.6, "reps": 10 },
+        { "id": "s1-chest", "type": "lift", "exerciseId": "chest-press-machine", "ratio": 0.6, "reps": 10, "accept": [{ "exerciseId": "dumbbell-bench-press", "factor": 2 }] },
+        { "id": "s1-goblet", "type": "lift", "exerciseId": "goblet-squat", "ratio": 0.35, "reps": 10 },
+        { "id": "s1-tech-goblet", "type": "technique", "exerciseId": "goblet-squat" },
+        { "id": "s1-tech-rdl", "type": "technique", "exerciseId": "dumbbell-rdl" }
+      ]
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "name": "Free-weight fundamentals",
+      "purpose": "Move from machines to dumbbells and learn the barbell lifts with light weights. Build the capacity to work harder.",
+      "summary": "Three rotating full-body workouts (A, B, C). Each one has a squat or hinge, a push, a pull, an accessory and core.",
+      "weeksHint": "about weeks 8–18",
+      "whatsNew": [
+        "Three workouts now rotate: A, B, C",
+        "Barbell back squat and Romanian deadlift: the two big lower-body lifts, starting light",
+        "Free weights make your body balance the load, which builds coordination and more muscle",
+        "Carries and anti-rotation core work for a strong, stable trunk"
+      ],
+      "split": "full",
+      "deloadEveryWeeks": 8,
+      "workouts": [
+        {
+          "id": "s2-a",
+          "name": "Workout A",
+          "shortName": "A",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Squat day: back squat, dumbbell bench, chest-supported row, overhead press.",
+          "slots": [
+            { "exerciseId": "barbell-back-squat", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "dumbbell-bench-press", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "chest-supported-row", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "dumbbell-shoulder-press", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "face-pull", "role": "accessory", "sets": 2, "repMin": 12, "repMax": 15, "progression": "double" },
+            { "exerciseId": "pallof-press", "role": "core", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s2-b",
+          "name": "Workout B",
+          "shortName": "B",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Hinge day: Romanian deadlift, incline press, pull-ups, rows and carries.",
+          "slots": [
+            { "exerciseId": "barbell-rdl", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "incline-dumbbell-press", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double" },
+            { "exerciseId": "assisted-pull-up", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double" },
+            { "exerciseId": "seated-cable-row", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "split-squat", "role": "accessory", "sets": 2, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "farmer-carry", "role": "core", "sets": 3, "repMin": 30, "repMax": 45, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s2-c",
+          "name": "Workout C",
+          "shortName": "C",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Second squat day: back squat, dumbbell bench, pulldown, one-arm row, back extension.",
+          "slots": [
+            { "exerciseId": "barbell-back-squat", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "dumbbell-bench-press", "role": "main", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "lat-pulldown", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "one-arm-dumbbell-row", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "back-extension", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "side-plank", "role": "core", "sets": 2, "repMin": 20, "repMax": 40, "progression": "double" }
+          ]
+        }
+      ],
+      "gates": [
+        { "id": "s2-sessions", "type": "sessions", "min": 24 },
+        { "id": "s2-consistency", "type": "consistency", "minPerWeek": 2, "weeksRequired": 5, "windowWeeks": 6 },
+        { "id": "s2-squat", "type": "lift", "exerciseId": "barbell-back-squat", "ratio": 0.8, "reps": 8, "accept": [{ "exerciseId": "smith-squat", "factor": 0.9 }] },
+        { "id": "s2-dbbench", "type": "lift", "exerciseId": "dumbbell-bench-press", "ratio": 0.25, "reps": 8 },
+        { "id": "s2-rdl", "type": "lift", "exerciseId": "barbell-rdl", "ratio": 0.9, "reps": 8 },
+        { "id": "s2-pullup", "type": "assist", "exerciseId": "assisted-pull-up", "maxAssistRatio": 0.4, "reps": 6, "orStrictExerciseId": "pull-up", "orStrictReps": 1 },
+        { "id": "s2-tech-squat", "type": "technique", "exerciseId": "barbell-back-squat" },
+        { "id": "s2-tech-rdl", "type": "technique", "exerciseId": "barbell-rdl" },
+        { "id": "s2-tech-bench", "type": "technique", "exerciseId": "dumbbell-bench-press" }
+      ]
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "name": "Strength base",
+      "purpose": "Get genuinely stronger on the big barbell lifts. For a beginner, getting stronger is what drives muscle growth.",
+      "summary": "Two alternating full-body workouts. Main lifts are 3 sets of 5 and go up a little every successful session (linear progression).",
+      "weeksHint": "about weeks 18–30",
+      "whatsNew": [
+        "Linear progression: the main lifts go up every time you get all your reps (+5 lb upper body, +10 lb legs)",
+        "Bench press, deadlift and standing overhead press join the squat",
+        "Missed reps? Repeat the weight. Missed twice in a row? Drop 10% and build back up",
+        "Optional 4th day (Upper pump) once you've trained 3×/week for 4 straight weeks"
+      ],
+      "split": "full",
+      "deloadEveryWeeks": 8,
+      "workouts": [
+        {
+          "id": "s3-a",
+          "name": "Workout A",
+          "shortName": "A",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Squat, bench press and barbell row, plus arms, rear shoulders and core.",
+          "slots": [
+            { "exerciseId": "barbell-back-squat", "role": "main", "sets": 3, "repMin": 5, "repMax": 5, "progression": "linear", "restSec": 150 },
+            { "exerciseId": "bench-press", "role": "main", "sets": 3, "repMin": 5, "repMax": 5, "progression": "linear", "restSec": 150 },
+            { "exerciseId": "barbell-row", "role": "secondary", "sets": 3, "repMin": 6, "repMax": 8, "progression": "double", "restSec": 120 },
+            { "exerciseId": "barbell-curl", "role": "accessory", "sets": 2, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "rear-delt-fly", "role": "accessory", "sets": 2, "repMin": 12, "repMax": 15, "progression": "double" },
+            { "exerciseId": "ab-wheel", "role": "core", "sets": 2, "repMin": 6, "repMax": 10, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s3-b",
+          "name": "Workout B",
+          "shortName": "B",
+          "focus": "full",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Deadlift, overhead press and pull-ups, plus triceps, calves and core.",
+          "slots": [
+            { "exerciseId": "deadlift", "role": "main", "sets": 2, "repMin": 5, "repMax": 5, "progression": "linear", "restSec": 180 },
+            { "exerciseId": "overhead-press", "role": "main", "sets": 3, "repMin": 5, "repMax": 5, "progression": "linear", "restSec": 150 },
+            { "exerciseId": "assisted-pull-up", "role": "secondary", "sets": 3, "repMin": 5, "repMax": 8, "progression": "double", "restSec": 120, "note": "Switch to strict pull-ups when you need no help." },
+            { "exerciseId": "triceps-pushdown", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "standing-calf-raise", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "hanging-knee-raise", "role": "core", "sets": 2, "repMin": 8, "repMax": 12, "progression": "double" }
+          ]
+        }
+      ],
+      "optionalWorkouts": [
+        {
+          "id": "s3-pump",
+          "name": "Upper pump",
+          "shortName": "Pump",
+          "focus": "upper",
+          "lowerHeavy": false,
+          "estMinutes": 40,
+          "description": "A bonus upper-body day with lighter, higher-rep work for chest, back, shoulders and arms.",
+          "unlock": { "minPerWeek": 3, "weeks": 4 },
+          "unlockText": "Unlocks after 4 straight weeks of 3+ sessions.",
+          "slots": [
+            { "exerciseId": "incline-dumbbell-press", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "lat-pulldown", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "lateral-raise", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 15, "progression": "double" },
+            { "exerciseId": "seated-cable-row", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "hammer-curl", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "overhead-triceps-extension", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" }
+          ]
+        }
+      ],
+      "gates": [
+        { "id": "s3-sessions", "type": "sessions", "min": 30 },
+        { "id": "s3-consistency", "type": "consistency", "minPerWeek": 2, "weeksRequired": 5, "windowWeeks": 6 },
+        { "id": "s3-squat", "type": "lift", "exerciseId": "barbell-back-squat", "ratio": 1.0, "reps": 5 },
+        { "id": "s3-bench", "type": "lift", "exerciseId": "bench-press", "ratio": 0.75, "reps": 5 },
+        { "id": "s3-deadlift", "type": "lift", "exerciseId": "deadlift", "ratio": 1.25, "reps": 5, "accept": [{ "exerciseId": "trap-bar-deadlift", "factor": 1 }] },
+        { "id": "s3-ohp", "type": "lift", "exerciseId": "overhead-press", "ratio": 0.5, "reps": 5 },
+        { "id": "s3-pullups", "type": "bodyweightReps", "exerciseId": "pull-up", "reps": 3, "accept": ["chin-up"] },
+        { "id": "s3-tech-deadlift", "type": "technique", "exerciseId": "deadlift" },
+        { "id": "s3-tech-bench", "type": "technique", "exerciseId": "bench-press" }
+      ]
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "name": "Build muscle",
+      "purpose": "More work per muscle to build size, especially shoulders, back, chest and arms: the athletic look.",
+      "summary": "Upper / lower split: Upper A, Lower A, Upper B, Lower B. Four days a week is ideal, but at three a week the rotation just continues.",
+      "weeksHint": "about weeks 30–42",
+      "whatsNew": [
+        "Upper / lower split, so each session can do more for fewer muscles",
+        "One heavy main lift per day (4 × 4–6), then muscle-building work in higher reps",
+        "Bulgarian split squats, hip thrusts, lateral raises, hammer curls, dips and more",
+        "Pull-ups and dips get extra weight once you earn it"
+      ],
+      "split": "upper-lower",
+      "deloadEveryWeeks": 8,
+      "workouts": [
+        {
+          "id": "s4-ua",
+          "name": "Upper A",
+          "shortName": "UA",
+          "focus": "upper",
+          "lowerHeavy": false,
+          "estMinutes": 50,
+          "description": "Heavy bench press, then pull-ups, incline press, rows, side shoulders and arms.",
+          "slots": [
+            { "exerciseId": "bench-press", "role": "main", "sets": 4, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 150 },
+            { "exerciseId": "pull-up", "role": "secondary", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "incline-dumbbell-press", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "chest-supported-row", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "lateral-raise", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 20, "progression": "double" },
+            { "exerciseId": "hammer-curl", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "overhead-triceps-extension", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s4-la",
+          "name": "Lower A",
+          "shortName": "LA",
+          "focus": "lower",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Heavy squat, then Romanian deadlift, Bulgarian split squats, leg curls, calves and core.",
+          "slots": [
+            { "exerciseId": "barbell-back-squat", "role": "main", "sets": 4, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 180 },
+            { "exerciseId": "barbell-rdl", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "bulgarian-split-squat", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "seated-leg-curl", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "standing-calf-raise", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "hanging-knee-raise", "role": "core", "sets": 3, "repMin": 8, "repMax": 15, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s4-ub",
+          "name": "Upper B",
+          "shortName": "UB",
+          "focus": "upper",
+          "lowerHeavy": false,
+          "estMinutes": 50,
+          "description": "Heavy overhead press, then barbell rows, incline bench, pulldowns, rear shoulders, biceps and dips.",
+          "slots": [
+            { "exerciseId": "overhead-press", "role": "main", "sets": 4, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 150 },
+            { "exerciseId": "barbell-row", "role": "secondary", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "incline-bench-press", "role": "secondary", "sets": 3, "repMin": 6, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "lat-pulldown", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "face-pull", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 20, "progression": "double" },
+            { "exerciseId": "barbell-curl", "role": "accessory", "sets": 2, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "dip", "role": "accessory", "sets": 2, "repMin": 6, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s4-lb",
+          "name": "Lower B",
+          "shortName": "LB",
+          "focus": "lower",
+          "lowerHeavy": true,
+          "estMinutes": 50,
+          "description": "Heavy deadlift, then leg press, hip thrusts, leg extensions, calves and core.",
+          "slots": [
+            { "exerciseId": "deadlift", "role": "main", "sets": 4, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 180 },
+            { "exerciseId": "leg-press", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "hip-thrust", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "leg-extension", "role": "accessory", "sets": 2, "repMin": 12, "repMax": 15, "progression": "double" },
+            { "exerciseId": "seated-calf-raise", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 15, "progression": "double" },
+            { "exerciseId": "cable-crunch", "role": "core", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" }
+          ]
+        }
+      ],
+      "gates": [
+        { "id": "s4-sessions", "type": "sessions", "min": 36 },
+        { "id": "s4-consistency", "type": "consistency", "minPerWeek": 2, "weeksRequired": 5, "windowWeeks": 6 },
+        { "id": "s4-squat", "type": "lift", "exerciseId": "barbell-back-squat", "ratio": 1.25, "reps": 5 },
+        { "id": "s4-bench", "type": "lift", "exerciseId": "bench-press", "ratio": 0.9, "reps": 5 },
+        { "id": "s4-deadlift", "type": "lift", "exerciseId": "deadlift", "ratio": 1.5, "reps": 5, "accept": [{ "exerciseId": "trap-bar-deadlift", "factor": 1 }] },
+        { "id": "s4-pullups", "type": "bodyweightReps", "exerciseId": "pull-up", "reps": 6, "accept": ["chin-up"] }
+      ]
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "name": "Intermediate",
+      "purpose": "Keep progressing once simple progression slows down, by varying heavy, moderate and light days.",
+      "summary": "Three full-body days that rotate: Heavy, Moderate, Light (undulating periodization). Every 5 weeks a lighter week. Optional 4-week specialization blocks.",
+      "weeksHint": "about weeks 42–52+",
+      "whatsNew": [
+        "Heavy, Moderate and Light days rotate, so you train hard without grinding every session",
+        "Blocks of about 4 hard weeks, then a lighter week",
+        "Pick a 4-week specialization block: arms & shoulders, upper chest, or legs",
+        "Year-one milestones: hit them and you get a summary of your year"
+      ],
+      "split": "full",
+      "deloadEveryWeeks": 5,
+      "workouts": [
+        {
+          "id": "s5-h",
+          "name": "Heavy day",
+          "shortName": "H",
+          "focus": "full",
+          "lowerHeavy": true,
+          "intensity": "heavy",
+          "estMinutes": 55,
+          "description": "Low reps, heavier weights: squat, bench press, weighted pull-ups and rows.",
+          "slots": [
+            { "exerciseId": "barbell-back-squat", "role": "main", "sets": 4, "repMin": 3, "repMax": 5, "progression": "double", "restSec": 180 },
+            { "exerciseId": "bench-press", "role": "main", "sets": 4, "repMin": 3, "repMax": 5, "progression": "double", "restSec": 180 },
+            { "exerciseId": "pull-up", "role": "secondary", "sets": 4, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 150 },
+            { "exerciseId": "barbell-row", "role": "secondary", "sets": 3, "repMin": 6, "repMax": 8, "progression": "double", "restSec": 120 },
+            { "exerciseId": "lateral-raise", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 20, "progression": "double" },
+            { "exerciseId": "hanging-leg-raise", "role": "core", "sets": 3, "repMin": 6, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s5-m",
+          "name": "Moderate day",
+          "shortName": "M",
+          "focus": "full",
+          "lowerHeavy": true,
+          "intensity": "moderate",
+          "estMinutes": 55,
+          "description": "Medium reps: deadlift, overhead press, incline dumbbells, rows, split squats and curls.",
+          "slots": [
+            { "exerciseId": "deadlift", "role": "main", "sets": 3, "repMin": 4, "repMax": 6, "progression": "double", "restSec": 180 },
+            { "exerciseId": "overhead-press", "role": "main", "sets": 4, "repMin": 5, "repMax": 7, "progression": "double", "restSec": 150 },
+            { "exerciseId": "incline-dumbbell-press", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 10, "progression": "double" },
+            { "exerciseId": "chest-supported-row", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "bulgarian-split-squat", "role": "secondary", "sets": 3, "repMin": 8, "repMax": 10, "progression": "double" },
+            { "exerciseId": "hammer-curl", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "s5-l",
+          "name": "Light day",
+          "shortName": "L",
+          "focus": "full",
+          "lowerHeavy": false,
+          "intensity": "light",
+          "estMinutes": 50,
+          "description": "Higher reps, lighter weights: front squat, close-grip bench, pulldowns, hip thrusts and arms.",
+          "slots": [
+            { "exerciseId": "front-squat", "role": "main", "sets": 3, "repMin": 8, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "close-grip-bench-press", "role": "main", "sets": 3, "repMin": 8, "repMax": 10, "progression": "double", "restSec": 120 },
+            { "exerciseId": "lat-pulldown", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "hip-thrust", "role": "secondary", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" },
+            { "exerciseId": "face-pull", "role": "accessory", "sets": 3, "repMin": 15, "repMax": 20, "progression": "double" },
+            { "exerciseId": "overhead-triceps-extension", "role": "accessory", "sets": 2, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "ab-wheel", "role": "core", "sets": 2, "repMin": 8, "repMax": 12, "progression": "double" }
+          ]
+        }
+      ],
+      "specializations": [
+        {
+          "id": "arms-shoulders",
+          "name": "Arms & shoulders",
+          "description": "Adds side-shoulder and arm work to every session for 4 weeks.",
+          "weeks": 4,
+          "extraSlots": [
+            { "exerciseId": "cable-lateral-raise", "role": "accessory", "sets": 3, "repMin": 12, "repMax": 20, "progression": "double" },
+            { "exerciseId": "incline-dumbbell-curl", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 12, "progression": "double" }
+          ]
+        },
+        {
+          "id": "upper-chest",
+          "name": "Upper chest",
+          "description": "Adds incline pressing and cable flyes to every session for 4 weeks.",
+          "weeks": 4,
+          "extraSlots": [
+            { "exerciseId": "incline-bench-press", "role": "accessory", "sets": 3, "repMin": 8, "repMax": 12, "progression": "double" },
+            { "exerciseId": "cable-fly", "role": "accessory", "sets": 2, "repMin": 12, "repMax": 15, "progression": "double" }
+          ]
+        },
+        {
+          "id": "legs",
+          "name": "Legs",
+          "description": "Adds leg press and leg curls to every session for 4 weeks. Go easy before long rides.",
+          "weeks": 4,
+          "extraSlots": [
+            { "exerciseId": "leg-press", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" },
+            { "exerciseId": "seated-leg-curl", "role": "accessory", "sets": 3, "repMin": 10, "repMax": 15, "progression": "double" }
+          ]
+        }
+      ],
+      "gates": [
+        { "id": "s5-squat", "type": "e1rm", "exerciseId": "barbell-back-squat", "ratio": 1.5 },
+        { "id": "s5-bench", "type": "e1rm", "exerciseId": "bench-press", "ratio": 1.0 },
+        { "id": "s5-deadlift", "type": "e1rm", "exerciseId": "deadlift", "ratio": 1.75, "accept": [{ "exerciseId": "trap-bar-deadlift", "factor": 1 }] },
+        { "id": "s5-ohp", "type": "e1rm", "exerciseId": "overhead-press", "ratio": 0.65 },
+        { "id": "s5-pullups", "type": "bodyweightReps", "exerciseId": "pull-up", "reps": 10, "accept": ["chin-up"] }
+      ],
+      "year2Gates": [
+        { "id": "y2-squat", "type": "e1rm", "exerciseId": "barbell-back-squat", "ratio": 1.75 },
+        { "id": "y2-bench", "type": "e1rm", "exerciseId": "bench-press", "ratio": 1.15 },
+        { "id": "y2-deadlift", "type": "e1rm", "exerciseId": "deadlift", "ratio": 2.0, "accept": [{ "exerciseId": "trap-bar-deadlift", "factor": 1 }] },
+        { "id": "y2-ohp", "type": "e1rm", "exerciseId": "overhead-press", "ratio": 0.75 },
+        { "id": "y2-pullups", "type": "bodyweightReps", "exerciseId": "pull-up", "reps": 12, "accept": ["chin-up"] }
+      ]
+    }
+  ],
+  "techniqueChecks": {
+    "goblet-squat": [
+      "I hold the dumbbell against my chest the whole time, elbows pointing down",
+      "My heels stay flat on the floor; I can wiggle my toes at the bottom",
+      "My knees travel out in line with my toes, not caving inward",
+      "I sit down between my heels until my hips are at least level with my knees",
+      "My chest stays up and my back stays flat, not rounded"
+    ],
+    "dumbbell-rdl": [
+      "I start the move by pushing my hips back, like closing a car door with my bum",
+      "My knees stay softly bent and don't move much",
+      "The dumbbells slide close to my legs the whole way",
+      "My back stays flat: I stop going down when I feel a strong stretch in my hamstrings",
+      "I stand up by squeezing my glutes, without leaning back at the top"
+    ],
+    "barbell-back-squat": [
+      "The bar sits on my upper back muscles, not on my neck",
+      "I brace (big breath into my belly) before every rep",
+      "My heels stay down and knees track over my toes",
+      "I reach at least parallel (hip crease level with the top of the knee) with a flat back",
+      "The safety pins are set just below my bottom position"
+    ],
+    "barbell-rdl": [
+      "The bar stays in contact with (or very close to) my legs",
+      "My hips move back, my knees stay soft and fixed",
+      "My back stays flat; I stop just below the knees or when my hamstrings stop me",
+      "My shoulders stay pulled back and down, chest proud",
+      "I finish standing tall with glutes squeezed, without leaning back"
+    ],
+    "dumbbell-bench-press": [
+      "My feet are flat and my shoulder blades are squeezed together and down",
+      "I lower the dumbbells to the sides of my chest with elbows at about 45°, not flared out",
+      "Forearms stay vertical under the weights",
+      "I press up and slightly in, without clanking the dumbbells",
+      "I can get the dumbbells into position and put them down safely"
+    ],
+    "deadlift": [
+      "The bar starts over the middle of my feet, touching my shins on the way up",
+      "I pull the slack out of the bar and brace before it leaves the floor",
+      "My back stays flat from start to finish: no rounding",
+      "Hips and shoulders rise together; I don't let my hips shoot up first",
+      "I lower the bar under control by pushing my hips back first"
+    ],
+    "bench-press": [
+      "Eyes under the bar, feet planted, shoulder blades squeezed together",
+      "The safety arms are set just below chest height (or a spotter is ready)",
+      "I lower the bar to my lower chest with elbows tucked at about 45°",
+      "I press the bar back up over my shoulders without bouncing it off my chest",
+      "My bum stays on the bench the whole time"
+    ]
+  },
+  "strengthStandards": [
+    { "id": "squat", "name": "Squat", "exerciseIds": ["barbell-back-squat"], "levels": [{ "label": "Beginner", "ratio": 0.75 }, { "label": "Novice", "ratio": 1.0 }, { "label": "Intermediate", "ratio": 1.5 }] },
+    { "id": "bench", "name": "Bench press", "exerciseIds": ["bench-press"], "levels": [{ "label": "Beginner", "ratio": 0.5 }, { "label": "Novice", "ratio": 0.75 }, { "label": "Intermediate", "ratio": 1.0 }] },
+    { "id": "deadlift", "name": "Deadlift", "exerciseIds": ["deadlift", "trap-bar-deadlift"], "levels": [{ "label": "Beginner", "ratio": 1.0 }, { "label": "Novice", "ratio": 1.25 }, { "label": "Intermediate", "ratio": 1.75 }] },
+    { "id": "ohp", "name": "Overhead press", "exerciseIds": ["overhead-press"], "levels": [{ "label": "Beginner", "ratio": 0.35 }, { "label": "Novice", "ratio": 0.5 }, { "label": "Intermediate", "ratio": 0.7 }] },
+    { "id": "row", "name": "Barbell row", "exerciseIds": ["barbell-row"], "levels": [{ "label": "Beginner", "ratio": 0.4 }, { "label": "Novice", "ratio": 0.6 }, { "label": "Intermediate", "ratio": 0.9 }] },
+    { "id": "legpress", "name": "Leg press", "exerciseIds": ["leg-press"], "levels": [{ "label": "Beginner", "ratio": 1.0 }, { "label": "Novice", "ratio": 1.75 }, { "label": "Intermediate", "ratio": 2.5 }] },
+    { "id": "pulldown", "name": "Lat pulldown", "exerciseIds": ["lat-pulldown"], "levels": [{ "label": "Beginner", "ratio": 0.45 }, { "label": "Novice", "ratio": 0.65 }, { "label": "Intermediate", "ratio": 0.9 }] },
+    { "id": "chestpress", "name": "Chest press", "exerciseIds": ["chest-press-machine"], "levels": [{ "label": "Beginner", "ratio": 0.45 }, { "label": "Novice", "ratio": 0.65 }, { "label": "Intermediate", "ratio": 0.9 }] }
+  ]
+}
