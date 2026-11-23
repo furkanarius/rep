@@ -243,6 +243,7 @@ export type SessionRec = Syncable & {
   isDeload: boolean;
   isReentry: boolean;
   legsLight?: boolean;
+  reentryFactor?: number;
   notes?: string;
   exerciseNotes?: Record<string, string>;
   /** Exercise order actually used (after substitutions) — keyed by slot index. */
