@@ -9,9 +9,8 @@
 ## Animated stick figures
 Five exercises without a good licensed photo (bird dog, suitcase carry, Bulgarian split squat, negative pull-up, kneeling plank) use original SVG stick figures drawn in code (`src/components/StickFigure.tsx`).
 
-## Fonts (self-hosted for offline use)
-- **Barlow Condensed** by Jeremy Tribby, SIL Open Font License 1.1, via `@fontsource/barlow-condensed`.
-- **Inter** by Rasmus Andersson, SIL Open Font License 1.1, via `@fontsource/inter`.
+## Fonts
+Rep uses the device's system font (San Francisco on iPhone and Mac), so no font files are bundled.
 
 ## Icons
 App icons and UI icons were drawn for Rep (`scripts/build-icons.mjs`, `src/components/Icons.tsx`).

@@ -188,12 +188,27 @@ export function prescribe(ex: Exercise, slot: Slot, exposures: Exposure[], ctx: 
     measure,
   };
   const loaded = usesLoad(ex);
-  const real = exposures.filter((e) => !e.isDeload && !e.isReentry && e.sets.length > 0);
+  // Trial ("find your weight") sets count as work, but only settled sets drive the next weight.
+  const settled = exposures.map((e) => ({ ...e, sets: e.sets.filter((s) => !s.trial) }));
+  const lastTrialOnly = [...exposures].reverse().find((e) => !e.isDeload && !e.isReentry && e.sets.length > 0);
+  const real = settled.filter((e) => !e.isDeload && !e.isReentry && e.sets.length > 0);
   const sameScheme = real.filter((e) => e.scheme === ctx.scheme || e.scheme === undefined);
 
   let out: Prescription;
 
-  if (!real.length) {
+  if (!real.length && lastTrialOnly && loaded) {
+    // Last time we were still finding the weight: carry on from the last trial.
+    const t = lastTrialOnly.sets[lastTrialOnly.sets.length - 1];
+    const step = nextCalibration(ex, t.weight, t.feel ?? 'solid', t.reps, t.targetReps, 4, ctx);
+    out = {
+      ...base,
+      targetReps: slot.repMin,
+      targetWeightKg: step.nextKg,
+      calibrate: false,
+      change: 'start',
+      reason: `Last time we were still finding your weight, so let's go with ${w(step.nextKg, ctx)}. Aim for ${slot.repMin}–${slot.repMax} ${unitOfReps}.`,
+    };
+  } else if (!real.length) {
     if (ctx.startingWeightKg && loaded) {
       out = {
         ...base,

@@ -62,7 +62,9 @@ export function migrateBackup(raw: unknown): Backup {
     exportedAt: b.exportedAt ?? new Date().toISOString(),
     settings: b.settings,
     sessions: b.sessions ?? [],
-    sets: b.sets ?? [],
+    sets: (b.sets ?? []).map((s) =>
+      (s.kind as string) === 'calibration' ? { ...s, kind: 'work' as const, isWarmup: false, trial: true } : s,
+    ),
     rides: b.rides ?? [],
     bodyMetrics: b.bodyMetrics ?? [],
     events: b.events ?? [],

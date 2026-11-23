@@ -61,7 +61,7 @@ export function Today() {
 
   return (
     <div className="page">
-      <p className="small" style={{ margin: '0 0 8px', fontWeight: 600 }}>
+      <p className="small muted" style={{ margin: '2px 0 8px' }}>
         Week streak: {streakN} · This week {rec.doneThisWeek} of {d.settings.targetPerWeek} lifting sessions
       </p>
 

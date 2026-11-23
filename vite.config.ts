@@ -18,8 +18,8 @@ export default defineConfig({
         name: 'Rep',
         short_name: 'Rep',
         description: 'Your personal strength coach. Tells you what to do today.',
-        theme_color: '#111315',
-        background_color: '#111315',
+        theme_color: '#f2f2f7',
+        background_color: '#f2f2f7',
         display: 'standalone',
         orientation: 'portrait',
         start_url: base + '#/today',
@@ -33,7 +33,7 @@ export default defineConfig({
       workbox: {
         // App shell, fonts, exercise data and every exercise image are precached,
         // so the app works in a basement gym with no signal.
-        globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2,json,wav}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webp,json}'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: base + 'index.html',
       },

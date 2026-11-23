@@ -6,7 +6,9 @@ import { fmtWeight } from '../../lib/units';
 
 export type Row = {
   key: string;
-  kind: 'calibration' | 'work';
+  /** Set number shown to the user (1, 2, 3…). Trials count as sets. */
+  n: number;
+  trial: boolean;
   setIndex: number;
   targetKg: number;
   targetReps: number;
@@ -17,6 +19,7 @@ export type RowsResult = {
   rows: Row[];
   /** Index into rows of the next set to log (undefined when all done). */
   activeIndex?: number;
+  /** Still looking for the working weight. */
   calibrating: boolean;
   calibrationMessage?: string;
   workDone: number;
@@ -29,59 +32,77 @@ export function computeRows(
   ctx: { unit: 'lb' | 'kg'; step: number; bodyWeightKg: number },
   extraSets = 0,
 ): RowsResult {
-  const mine = logged.filter((s) => s.slotIndex === pe.slotIndex && (s.kind === 'work' || s.kind === 'calibration'));
-  const work = mine.filter((s) => s.kind === 'work').sort((a, b) => a.setIndex - b.setIndex);
-  const cal = mine.filter((s) => s.kind === 'calibration').sort((a, b) => a.setIndex - b.setIndex);
-  const rows: Row[] = [];
-  let message: string | undefined;
-  let calibrating = false;
-  let workKg = pe.targetWeightKg;
-  const total = pe.sets + extraSets;
+  const mine = logged
+    .filter((s) => s.slotIndex === pe.slotIndex && s.kind === 'work')
+    .sort((a, b) => a.setIndex - b.setIndex);
+  const trials = mine.filter((s) => s.trial);
+  const settled = mine.filter((s) => !s.trial);
+  const total = Math.max(pe.sets + extraSets, mine.length);
+  const fmt = (kg: number) => `${fmtWeight(kg, ctx.unit)} ${ctx.unit}`;
 
-  if (pe.calibrate && work.length === 0) {
+  const rows: Row[] = mine.map((s, i) => ({
+    key: `s${i}`,
+    n: i + 1,
+    trial: !!s.trial,
+    setIndex: s.setIndex,
+    targetKg: s.targetWeight,
+    targetReps: s.targetReps,
+    logged: s,
+  }));
+
+  let calibrating = false;
+  let message: string | undefined;
+  let nextKg = pe.targetWeightKg;
+  let nextReps = pe.targetReps;
+  let nextTrial = false;
+
+  if (pe.calibrate && settled.length === 0) {
     const reps = calibrationReps(pe.slot);
-    cal.forEach((s, i) => rows.push({ key: `c${i}`, kind: 'calibration', setIndex: s.setIndex, targetKg: s.targetWeight, targetReps: s.targetReps, logged: s }));
-    if (!cal.length) {
+    if (!trials.length) {
       calibrating = true;
-      rows.push({ key: 'c0', kind: 'calibration', setIndex: 0, targetKg: pe.targetWeightKg, targetReps: reps });
-      message = `Let's find your weight. Try ${reps} reps and tell me how it felt.`;
+      nextTrial = true;
+      nextReps = reps;
+      message = `Let's find your weight. Do ${reps} reps, then rate how it felt. Every try counts as a set.`;
     } else {
-      const last = cal[cal.length - 1];
-      const step = nextCalibration(pe.exercise, last.weight, last.feel ?? 'solid', last.reps, last.targetReps, cal.length, ctx);
-      message = step.message;
+      const last = trials[trials.length - 1];
+      const step = nextCalibration(pe.exercise, last.weight, last.feel ?? 'solid', last.reps, last.targetReps, trials.length, ctx);
+      nextKg = step.nextKg;
       if (step.done) {
-        workKg = step.nextKg;
+        nextReps = pe.slot.repMin;
+        message = `${step.message} The rest of your sets use it.`;
       } else {
         calibrating = true;
-        rows.push({ key: `c${cal.length}`, kind: 'calibration', setIndex: cal.length, targetKg: step.nextKg, targetReps: reps });
+        nextTrial = true;
+        nextReps = reps;
+        message = `${step.message} That set counted.`;
       }
     }
-    if (calibrating) {
-      return { rows, activeIndex: rows.length - 1, calibrating, calibrationMessage: message, workDone: 0, workTotal: total };
-    }
-  } else if (pe.calibrate && work.length) {
-    workKg = work[0].weight;
-    cal.forEach((s, i) => rows.push({ key: `c${i}`, kind: 'calibration', setIndex: s.setIndex, targetKg: s.targetWeight, targetReps: s.targetReps, logged: s }));
-    message = `Found it: ${fmtWeight(workKg, ctx.unit)} ${ctx.unit} is your working weight. If that wasn't Solid, change the rating and I'll adjust.`;
+  } else if (pe.calibrate && settled.length) {
+    nextKg = settled[0].weight;
+    nextReps = pe.slot.repMin;
+    message = `Found it: ${fmt(nextKg)} is your working weight. Wrong rating? Change it and I'll adjust.`;
   }
 
-  const baseIndex = cal.length;
-  const count = Math.max(total, work.length);
-  for (let i = 0; i < count; i++) {
-    const l = work[i];
-    // Unlogged sets inherit the most recent logged weight, so a change carries forward.
-    const prev = work.slice(0, i).pop();
-    const kg = l ? l.targetWeight : prev ? prev.weight : workKg;
-    const reps = pe.calibrate ? pe.slot.repMin : pe.targetReps;
-    rows.push({ key: `w${i}`, kind: 'work', setIndex: baseIndex + i, targetKg: kg, targetReps: l ? l.targetReps : reps, logged: l });
+  // Unlogged sets: the next one carries the latest logged weight forward (if you changed it).
+  for (let i = mine.length; i < total; i++) {
+    const prev = mine[mine.length - 1];
+    const kg = !prev || pe.calibrate ? nextKg : prev.weight;
+    rows.push({
+      key: `s${i}`,
+      n: i + 1,
+      trial: i === mine.length ? nextTrial : false,
+      setIndex: (prev?.setIndex ?? -1) + 1 + (i - mine.length),
+      targetKg: kg,
+      targetReps: i === mine.length ? nextReps : pe.calibrate ? pe.slot.repMin : pe.targetReps,
+    });
   }
   const activeIndex = rows.findIndex((r) => !r.logged);
   return {
     rows,
     activeIndex: activeIndex === -1 ? undefined : activeIndex,
-    calibrating: false,
-    calibrationMessage: pe.calibrate && work.length <= 1 ? message : undefined,
-    workDone: work.length,
+    calibrating,
+    calibrationMessage: pe.calibrate && (calibrating || settled.length <= 1 || trials.length > 0) ? message : undefined,
+    workDone: mine.length,
     workTotal: total,
   };
 }

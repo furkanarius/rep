@@ -85,7 +85,7 @@ export function Onboarding() {
       <div className="grow">
         {step === 0 && (
           <>
-            <h1 className="display" style={{ fontSize: 44, margin: '24px 0 4px', textTransform: 'uppercase' }}>
+            <h1 className="display" style={{ fontSize: 40, margin: '28px 0 6px' }}>
               Hi. I'm Rep.
             </h1>
             <p className="muted">

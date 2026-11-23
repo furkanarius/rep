@@ -60,8 +60,7 @@ export function About() {
       </p>
       <h3>Credits</h3>
       <p className="small">
-        Exercise photos: free-exercise-db by yuhonas (public domain, Unlicense), derived from wrkout/exercises.json (public domain). Fonts:
-        Barlow Condensed and Inter (SIL Open Font License). Exercise instructions written for Rep.
+        Exercise photos: free-exercise-db by yuhonas (public domain, Unlicense), derived from wrkout/exercises.json (public domain). Exercise instructions written for Rep.
       </p>
     </div>
   );

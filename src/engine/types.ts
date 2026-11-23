@@ -264,6 +264,11 @@ export type SetRec = Syncable & {
   feel?: Feel;
   completedAt: string;
   substitutedFrom?: string;
+  /**
+   * "Find your weight" trial set. It counts as a real working set (reps, volume, records),
+   * but is ignored when deciding next time's weight, because trials use different weights.
+   */
+  trial?: boolean;
 };
 
 export type RideRec = Syncable & { date: string; minutes: number; type: RideType };

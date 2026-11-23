@@ -65,7 +65,7 @@ export function SessionDetail({ id }: { id: string }) {
                 <li key={x.id}>
                   <button className="list-row" onClick={() => setEdit(x)} aria-label={`Edit set ${x.setIndex + 1}`}>
                     <span className="badge" style={{ minWidth: 64, textAlign: 'center' }}>
-                      {x.kind === 'warmup' ? 'warm-up' : x.kind === 'calibration' ? 'test' : `set ${list.filter((y) => y.kind === 'work').indexOf(x) + 1}`}
+                      {x.kind === 'warmup' ? 'warm-up' : `set ${list.filter((y) => y.kind === 'work').indexOf(x) + 1}${x.trial ? ' (test)' : ''}`}
                     </span>
                     <span className="grow num" style={{ fontSize: 22 }}>
                       {x.weight > 0 ? `${fmtWeight(x.weight, unit)} ${unit} × ` : ''}

@@ -4,7 +4,7 @@ import { useData, type AppData } from '../../app/data';
 import { go } from '../../app/router';
 import { buildSession, substituteOptions, type PlannedExercise } from '../../engine/session';
 import { exercises, stepFor, templateById, exerciseById } from '../../engine/program';
-import { nextCalibration, usesLoad, measureOf, barFor } from '../../engine/progression';
+import { usesLoad, measureOf, barFor } from '../../engine/progression';
 import type { Exercise, Feel, SessionRec, SetRec } from '../../engine/types';
 import * as repo from '../../db/repo';
 import { computeRows, type Row } from './rows';
@@ -134,7 +134,7 @@ function Live({ d, session }: { d: AppData; session: SessionRec }) {
           <IconX />
         </button>
         <div style={{ textAlign: 'center', flex: 1 }}>
-          <div className="display" style={{ fontSize: 20, textTransform: 'uppercase' }}>
+          <div style={{ fontSize: 17, fontWeight: 600 }}>
             {found.template.name}
           </div>
           {flags.length > 0 && <div className="tiny muted">{flags.join(' · ')}</div>}
@@ -173,15 +173,22 @@ function Live({ d, session }: { d: AppData; session: SessionRec }) {
           toast={toast}
         />
       </div>
-      {rest.view}
       <div className="workout-nav">
-        <button className="btn quiet" onClick={() => setCur(cur - 1)} disabled={cur === 0} aria-label="Previous exercise">
-          <IconBack />
-        </button>
-        {cur < plan.length - 1 ? (
-          <button className={`btn grow ${workDoneFor(pe) >= pe.sets ? 'primary' : ''}`} onClick={() => setCur(cur + 1)}>
-            Next: {plan[cur + 1].exercise.name} <IconNext />
+        {rest.view ?? (
+          <button className="btn quiet" onClick={() => setCur(cur - 1)} disabled={cur === 0} aria-label="Previous exercise">
+            <IconBack />
           </button>
+        )}
+        {cur < plan.length - 1 ? (
+          rest.view ? (
+            <button className="btn" onClick={() => setCur(cur + 1)} aria-label={`Next exercise: ${plan[cur + 1].exercise.name}`}>
+              <IconNext />
+            </button>
+          ) : (
+            <button className={`btn grow ${workDoneFor(pe) >= pe.sets ? 'primary' : ''}`} onClick={() => setCur(cur + 1)}>
+              Next: {plan[cur + 1].exercise.name} <IconNext />
+            </button>
+          )
         ) : (
           <button className="btn grow primary" onClick={() => (allDone ? finish() : setConfirmFinish(true))}>
             Finish workout
@@ -258,6 +265,8 @@ function ExercisePanel({
   const loaded = usesLoad(ex);
   const seconds = measureOf(ex) === 'seconds';
   const lastLogged = [...rows].reverse().find((r) => r.logged)?.logged;
+  const [rateOpen, setRateOpen] = useState<string>();
+  const [holding, setHolding] = useState(false);
 
   // Draft for the active row (resets when the active row changes).
   const active = activeIndex !== undefined ? rows[activeIndex] : undefined;
@@ -266,52 +275,38 @@ function ExercisePanel({
   const cur = draft && draft.key === dkey ? draft : active ? { key: dkey, kg: active.targetKg, reps: active.targetReps } : undefined;
 
   const logging = useRef<string | undefined>(undefined);
-  const logActive = async () => {
+  const logActive = async (repsOverride?: number) => {
     if (!active || !cur) return;
     // Ignore a double tap on the same row while the first one is being saved.
     if (logging.current === active.key) return;
     logging.current = active.key;
     window.setTimeout(() => (logging.current = undefined), 800);
     unlockAudio();
-    const isCal = active.kind === 'calibration';
-    const rec = await repo.logSet({
+    setHolding(false);
+    await repo.logSet({
       sessionId: session.id,
       exerciseId: ex.id,
       slotIndex: pe.slotIndex,
       setIndex: active.setIndex,
-      isWarmup: isCal,
-      kind: active.kind,
+      isWarmup: false,
+      kind: 'work',
+      trial: active.trial || undefined,
       targetWeight: active.targetKg,
       targetReps: active.targetReps,
       weight: loaded ? cur.kg : 0,
-      reps: cur.reps,
-      feel: 'solid',
+      reps: repsOverride ?? cur.reps,
+      // No rating yet: "How was set N?" appears on this set. Skipping counts as Solid.
       substitutedFrom: pe.substitutedFrom,
     });
-    if (isCal) await resolveCalibration(rec, 'solid');
-    const isLast = !isCal && workDone + 1 >= workTotal;
+    setRateOpen(undefined);
+    const isLast = workDone + 1 >= workTotal;
     onLogged(pe.restSec, isLast);
-    if (isLast && index < count - 1) toast(`${ex.name} done. Swipe or tap Next when ready.`);
-  };
-
-  /** After a calibration set's feel is known: Solid (with all reps) locks it in as working set 1. */
-  const resolveCalibration = async (rec: SetRec, feel: Feel) => {
-    const calCount = sets.filter((s) => s.slotIndex === pe.slotIndex && s.kind === 'calibration' && s.id !== rec.id).length + 1;
-    const stepRes = nextCalibration(ex, rec.weight, feel, rec.reps, rec.targetReps, calCount, ctx);
-    if (stepRes.done && feel === 'solid' && rec.reps >= rec.targetReps) {
-      await repo.updateSet(rec.id, { kind: 'work', isWarmup: false, feel });
-    }
+    if (isLast && index < count - 1) toast(`${ex.name} done. Rate the last set, then tap Next.`);
   };
 
   const changeFeel = async (s: SetRec, f: Feel) => {
     await repo.setFeel(s.id, f);
-    if (!pe.calibrate) return;
-    const workSets = sets.filter((x) => x.slotIndex === pe.slotIndex && x.kind === 'work');
-    if (s.kind === 'calibration') await resolveCalibration({ ...s, feel: f }, f);
-    else if (s.kind === 'work' && workSets.length === 1 && workSets[0].id === s.id && f !== 'solid') {
-      // Not Solid after all: keep looking for the right weight.
-      await repo.updateSet(s.id, { kind: 'calibration', isWarmup: true });
-    }
+    setRateOpen(undefined);
   };
 
   const fmt = (kg: number) => fmtWeight(kg, unit);
@@ -329,7 +324,7 @@ function ExercisePanel({
   const range = pe.repMin === pe.repMax ? `${pe.repMin}` : `${pe.repMin}–${pe.repMax}`;
   const targetLine = calibrating
     ? `Find your weight: ${active?.targetReps} reps, then rate it`
-    : `${pe.sets} set${pe.sets > 1 ? 's' : ''} × ${range} ${repWord}${loaded && pe.targetWeightKg > 0 ? ` · ${fmt(rows.find((r) => r.kind === 'work')?.targetKg ?? pe.targetWeightKg)} ${loadLabel}` : ''} · rest ${pe.restSec} s`;
+    : `${pe.sets} set${pe.sets > 1 ? 's' : ''} × ${range} ${repWord}${loaded && pe.targetWeightKg > 0 ? ` · ${fmt(active?.targetKg ?? pe.targetWeightKg)} ${loadLabel}` : ''} · rest ${pe.restSec} s`;
 
   return (
     <div>
@@ -378,13 +373,14 @@ function ExercisePanel({
               Skip warm-ups
             </button>
           </div>
+          <div className="warm-list">
           {pe.warmups.map((w, i) => {
             const done = warmLogged.find((s) => s.setIndex === i);
             return (
               <div className="set-row warm" key={i}>
                 <span className="label">W{i + 1}</span>
                 <span>
-                  <span className="num" style={{ fontSize: 20, color: 'var(--text)' }}>
+                  <span className="num" style={{ fontSize: 19, color: 'var(--text)' }}>
                     {fmt(w.weightKg)}
                   </span>{' '}
                   {loadLabel} × {w.reps}
@@ -417,48 +413,54 @@ function ExercisePanel({
               </div>
             );
           })}
+          </div>
         </div>
       )}
 
-      <div role="list" aria-label="Sets">
-        {rows.map((r, i) => (
-          <div key={r.key} role="listitem">
-            <SetRowView
-              row={r}
-              n={r.kind === 'calibration' ? `T${i + 1}` : `${rows.filter((x, k) => x.kind === 'work' && k <= i).length}`}
-              state={r.logged ? 'logged' : i === activeIndex ? 'active' : 'future'}
-              ex={ex}
-              unit={unit}
-              step={step}
-              loadLabel={loadLabel}
-              seconds={seconds}
-              draft={i === activeIndex ? cur : undefined}
-              onDraft={(kg, reps) => setDraft({ key: dkey, kg, reps })}
-              onLog={logActive}
-              onEdit={() => r.logged && setSheet({ edit: r.logged })}
-            />
-            {r.logged && r.logged.id === lastLogged?.id && (
-              <div className="feel" role="group" aria-label="How did that feel?">
-                <span className="small muted" style={{ width: '100%' }}>
-                  How did that feel?
-                </span>
-                {FEELS.map(({ f, label, hint }) => (
-                  <button
-                    key={f}
-                    className="chip"
-                    aria-pressed={(r.logged!.feel ?? 'solid') === f}
-                    onClick={() => changeFeel(r.logged!, f)}
-                    title={hint}
-                  >
-                    {label} <span className="tiny" style={{ opacity: 0.75 }}>{hint}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
+      <div className="set-list" role="list" aria-label="Sets">
+        {rows.map((r, i) => {
+          const isLast = !!r.logged && r.logged.id === lastLogged?.id;
+          const askFeel = !!r.logged && ((isLast && !r.logged.feel) || rateOpen === r.logged.id);
+          return (
+            <div key={r.key} role="listitem" className={`set-item ${r.logged ? 'is-done' : i === activeIndex ? 'is-active' : 'is-future'}`}>
+              <SetRowView
+                row={r}
+                n={r.n}
+                state={r.logged ? 'logged' : i === activeIndex ? 'active' : 'future'}
+                ex={ex}
+                unit={unit}
+                step={step}
+                loadLabel={loadLabel}
+                seconds={seconds}
+                draft={i === activeIndex ? cur : undefined}
+                onDraft={(kg, reps) => setDraft({ key: dkey, kg, reps })}
+                onLog={() => (seconds ? setHolding(true) : logActive())}
+                onEdit={() => r.logged && setSheet({ edit: r.logged })}
+                onRate={() => r.logged && setRateOpen(rateOpen === r.logged.id ? undefined : r.logged.id)}
+              />
+              {askFeel && r.logged && (
+                <div className="feel" role="group" aria-label={`How was set ${r.n}?`}>
+                  <div className="feel-q">
+                    How was set {r.n}?<span className="muted"> {r.trial ? 'This picks your next weight.' : 'Skip = Solid'}</span>
+                  </div>
+                  <div className="seg feel-seg">
+                    {FEELS.map(({ f, label, hint }) => (
+                      <button key={f} aria-pressed={r.logged!.feel === f} onClick={() => changeFeel(r.logged!, f)}>
+                        <span>{label}</span>
+                        <small>{hint}</small>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {i === activeIndex && holding && cur && (
+                <HoldTimer target={cur.reps} sound={d.settings.sound} perSide={!!ex.perSide} onStop={(sec) => logActive(sec)} onCancel={() => setHolding(false)} />
+              )}
+            </div>
+          );
+        })}
       </div>
-      {activeIndex === undefined && !calibrating && (
+      {activeIndex === undefined && (
         <div className="row" style={{ marginTop: 10 }}>
           <span className="badge done">✓ {ex.name} done</span>
           <button className="btn ghost" onClick={() => setExtra(extra + 1)}>
@@ -527,9 +529,10 @@ function SetRowView({
   onDraft,
   onLog,
   onEdit,
+  onRate,
 }: {
   row: Row;
-  n: string;
+  n: number;
   state: 'logged' | 'active' | 'future';
   ex: Exercise;
   unit: 'lb' | 'kg';
@@ -540,6 +543,7 @@ function SetRowView({
   onDraft: (kg: number, reps: number) => void;
   onLog: () => void;
   onEdit: () => void;
+  onRate: () => void;
 }) {
   const loaded = usesLoad(ex);
   const repStep = seconds ? 5 : 1;
@@ -548,7 +552,10 @@ function SetRowView({
     const l = row.logged;
     return (
       <div className="set-row logged">
-        <span className="label">{n}</span>
+        <span className="label">
+          {n}
+          {row.trial && <em>test</em>}
+        </span>
         <button className="static-val btn ghost" style={{ color: 'var(--text)' }} onClick={onEdit} aria-label={`Edit set ${n}`}>
           {loaded ? (
             <>
@@ -561,9 +568,10 @@ function SetRowView({
         <button className="static-val btn ghost" style={{ color: 'var(--text)' }} onClick={onEdit} aria-label={`Edit set ${n}`}>
           <span className="num">{l.reps}</span>&nbsp;<span className="tiny muted">{repLabel}</span>
         </button>
-        <span className="check done" aria-label={`Set ${n} done`}>
-          <IconCheck />
-        </span>
+        <button className={`feel-pill ${l.feel ?? 'unrated'}`} onClick={onRate} aria-label={`Set ${n} felt ${l.feel ?? 'not rated yet'}. Change rating`}>
+          <IconCheck width={16} />
+          {l.feel ? l.feel[0].toUpperCase() + l.feel.slice(1) : 'Done'}
+        </button>
       </div>
     );
   }
@@ -573,7 +581,10 @@ function SetRowView({
   if (state === 'future') {
     return (
       <div className="set-row future" aria-label={`Set ${n}, coming up`}>
-        <span className="label">{n}</span>
+        <span className="label">
+          {n}
+          {row.trial && <em>test</em>}
+        </span>
         <span className="static-val">
           {loaded ? (
             <>
@@ -594,8 +605,11 @@ function SetRowView({
   }
   const minW = ex.loadType === 'barbell-total' ? fromKg(barFor(ex, unit), unit) : 0;
   return (
-    <div className="set-row" style={{ borderBottom: 0 }}>
-      <span className="label">{n}</span>
+    <div className="set-row">
+      <span className="label">
+        {n}
+        {row.trial && <em>test</em>}
+      </span>
       {loaded ? (
         <Stepper
           value={disp}
@@ -612,10 +626,61 @@ function SetRowView({
       <button
         className="check primary"
         onClick={onLog}
-        aria-label={`Mark set ${n} done${loaded ? `, ${fmtWeight(kg, unit)} ${unit === 'lb' ? 'pounds' : 'kilograms'}` : ''}, ${reps} ${seconds ? 'seconds' : 'reps'}`}
+        aria-label={seconds ? `Start the timer for set ${n}, target ${reps} seconds` : `Mark set ${n} done${loaded ? `, ${fmtWeight(kg, unit)} ${unit === 'lb' ? 'pounds' : 'kilograms'}` : ''}, ${reps} ${seconds ? 'seconds' : 'reps'}`}
       >
-        <IconCheck />
+        {seconds ? <span style={{ fontSize: 15, fontWeight: 600 }}>Start</span> : <IconCheck />}
       </button>
+    </div>
+  );
+}
+
+/** Timed holds and carries: 3-second get-ready, then count up; beeps at the target; Stop logs the time. */
+function HoldTimer({ target, sound, perSide, onStop, onCancel }: { target: number; sound: boolean; perSide: boolean; onStop: (sec: number) => void; onCancel: () => void }) {
+  const [start] = useState(() => Date.now() + 3000);
+  const [now, setNow] = useState(Date.now());
+  const beeped = useRef(false);
+  const box = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    box.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, []);
+  useEffect(() => {
+    const t = window.setInterval(() => setNow(Date.now()), 100);
+    return () => window.clearInterval(t);
+  }, []);
+  const ready = now < start;
+  const elapsed = Math.max(0, Math.floor((now - start) / 1000));
+  useEffect(() => {
+    if (ready) return;
+    if (elapsed >= target && !beeped.current) {
+      beeped.current = true;
+      if (sound) beep();
+    }
+  }, [elapsed, target, ready, sound]);
+  const hit = elapsed >= target;
+  return (
+    <div ref={box} className={`hold ${hit ? 'hit' : ''}`} role="timer" aria-live="polite">
+      {ready ? (
+        <>
+          <div className="hold-label">Get in position</div>
+          <div className="hold-time">{Math.ceil((start - now) / 1000)}</div>
+          <button className="btn quiet block" onClick={onCancel}>
+            Cancel
+          </button>
+        </>
+      ) : (
+        <>
+          <div className="hold-label">{hit ? 'Target reached! Keep going or stop' : `Hold${perSide ? ' (each side)' : ''} · target ${target} s`}</div>
+          <div className="hold-time">
+            {Math.floor(elapsed / 60)}:{String(elapsed % 60).padStart(2, '0')}
+          </div>
+          <div className="bar" style={{ margin: '4px 0 12px' }}>
+            <span style={{ width: `${Math.min(100, (elapsed / target) * 100)}%` }} />
+          </div>
+          <button className="btn primary big block" onClick={() => onStop(elapsed)}>
+            Stop &amp; log {elapsed} s
+          </button>
+        </>
+      )}
     </div>
   );
 }
@@ -730,9 +795,7 @@ function useRest(sessionId: string, sound: boolean) {
   const view = state ? (
     <div className={`rest-bar ${over ? 'over' : ''}`} role="timer" aria-live={over ? 'assertive' : 'off'}>
       <div className="grow">
-        <div className="tiny" style={{ fontWeight: 700, opacity: 0.8 }}>
-          {over ? 'REST DONE — GO!' : 'REST'}
-        </div>
+        <div className="tiny" style={{ fontWeight: 600 }}>{over ? 'Rest done. Go!' : 'Rest'}</div>
         <div className="num">{over ? '0:00' : `${mm}:${ss}`}</div>
       </div>
       {!over && (

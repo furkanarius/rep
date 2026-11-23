@@ -6,15 +6,16 @@ import sharp from 'sharp';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const glyph = (s) => `
   <g transform="translate(256 256) scale(${s}) translate(-256 -256)">
-    <rect x="96" y="243" width="320" height="26" rx="8" fill="#ffc400"/>
-    <rect x="128" y="176" width="34" height="160" rx="10" fill="#ffc400"/>
-    <rect x="350" y="176" width="34" height="160" rx="10" fill="#ffc400"/>
-    <rect x="168" y="200" width="24" height="112" rx="8" fill="#ffc400"/>
-    <rect x="320" y="200" width="24" height="112" rx="8" fill="#ffc400"/>
+    <rect x="96" y="243" width="320" height="26" rx="8" fill="#ffffff"/>
+    <rect x="128" y="176" width="34" height="160" rx="10" fill="#ffffff"/>
+    <rect x="350" y="176" width="34" height="160" rx="10" fill="#ffffff"/>
+    <rect x="168" y="200" width="24" height="112" rx="8" fill="#ffffff"/>
+    <rect x="320" y="200" width="24" height="112" rx="8" fill="#ffffff"/>
   </g>`;
 const svg = (rounded, s) =>
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-    <rect width="512" height="512" rx="${rounded ? 112 : 0}" fill="#111315"/>
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a8dff"/><stop offset="1" stop-color="#0060d6"/></linearGradient></defs>
+    <rect width="512" height="512" rx="${rounded ? 112 : 0}" fill="url(#g)"/>
     ${glyph(s)}
   </svg>`;
 

@@ -22,11 +22,24 @@ export class RepDB extends Dexie {
       events: 'id, type, date, exerciseId, updatedAt',
       preferences: 'id, updatedAt',
     });
-    // Migration path example for the future:
-    // this.version(2).stores({ sets: 'id, sessionId, exerciseId, completedAt, updatedAt, [sessionId+exerciseId]' })
-    //   .upgrade((tx) => tx.table('sets').toCollection().modify((s) => { s.kind ??= s.isWarmup ? 'warmup' : 'work'; }));
+    // v2: "find your weight" trial sets now count as real working sets (flagged `trial`).
+    this.version(2)
+      .stores({})
+      .upgrade((tx) =>
+        tx
+          .table('sets')
+          .toCollection()
+          .modify((s: { kind: string; isWarmup: boolean; trial?: boolean; updatedAt: number }) => {
+            if (s.kind === 'calibration') {
+              s.kind = 'work';
+              s.isWarmup = false;
+              s.trial = true;
+              s.updatedAt = Date.now();
+            }
+          }),
+      );
   }
 }
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 export const db = new RepDB();
